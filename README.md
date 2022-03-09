@@ -1,0 +1,1 @@
+This is the first project of the Full Stack Web Development postgraduate course. The objective of the project is to use the knowledge learned in class about HTML and CSS to develop our first web page. In my case I have decided to clone the Zalando sales website (zalando.es), and adapt it to my parents' fabric store.
