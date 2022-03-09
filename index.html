@@ -1,91 +1,183 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>TejidosPulido</title>
-    <link rel="stylesheet" href="style.css">
-    <script src="main.js"></script>
-</head>
-<body>
-    <header>
-        <div>
-          <div id="navbar_topRow">
-            <img id="logo_image" src="./src/logo/logo.svg" />
-            <div class="navTools">
-              <div>
-                <a title="Mi cuenta" href="#">
-                  <img src="./src/icons/user.svg" />
-                </a>
-              </div>
-              <div>
-                <a title="Mis favoritos" href="#">
-                  <img src="./src/icons/heart.svg" />
-                </a>
-              </div>
-              <div>
-                <a title="Mi carrito" href="#">
-                  <img src="./src/icons/bag.svg" />
-                </a>
-              </div>
-            </div>
-          </div>
-          <div id="navbar_bottomRow">
-            <div id="navbar_button">
-              <a title="Mi carrito" href="#">
-                <img src="./src/icons/navbar.svg" />
-              </a>
-            </div>
-            <div id="navbar_search_container">
-              <form action="">
-                <button class="z-button" type="submit">
-                  <img src="./src/icons/search.svg" />
-                </button>
-                <div>
-                  <input
-                    type="search"
-                    name="navbar_search"
-                    id="navbar_search"
-                    placeholder="Busca aquí"
-                    aria-label="Busca aquí"
-                  />
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>TejidosPulido</title>
+        <link rel="stylesheet" href="style.css" />
+    </head>
+
+    <body>
+        <header>
+            <div>
+                <div id="navbar_topRow">
+                    <img id="logo_image" src="./src/logo/logo.svg" />
+                    <div class="navTools">
+                        <div>
+                            <a title="Mi cuenta" href="#">
+                                <img src="./src/icons/user.svg" />
+                            </a>
+                        </div>
+                        <div>
+                            <a title="Mis favoritos" href="#">
+                                <img src="./src/icons/heart.svg" />
+                            </a>
+                        </div>
+                        <div>
+                            <a title="Mi carrito" href="#">
+                                <img src="./src/icons/bag.svg" />
+                            </a>
+                        </div>
+                    </div>
                 </div>
-              </form>
+                <div id="navbar_bottomRow">
+                    <button id="navbar_button" class="z-button" type="button">
+                        <img src="./src/icons/navbar.svg" />
+                    </button>
+                    <div id="navbar_search_container">
+                        <form action="">
+                            <button class="z-button" type="submit">
+                                <img src="./src/icons/search.svg" />
+                            </button>
+                            <div>
+                                <input type="search" name="navbar_search" id="navbar_search" placeholder="Busca aquí" aria-label="Busca aquí" />
+                            </div>
+                        </form>
+                    </div>
+                </div>
             </div>
-          </div>
-        </div>
-        <div id="navbar_sidePanel_container">
-          <div id="navbar_sidePanelHead">
-            <div></div>
-            <span>Explorar por categoría</span>
-            <button class="z-button" type="button">
-              <img src="./src/icons/close.svg" />
-            </button>
-          </div>
-          <div id="navbar_sidePanelCategoryMenu">
-            <nav>
-              <ul>
-                <li class="navbar_sidePanelCategoryMenu_element">
-                  <a href="">
-                    <div class="navbar_sidePanelCategoryMenu_linkImage">
-                      <div
-                        style="
-                          background-image: url(./src/images/categories/infantiles.jpeg);
-                        "
-                      ></div>
-                    </div>
-                    <div class="navbar_sidePanelCategoryMenu_linkText">
-                      <span>Infantiles</span>
-                    </div>
-                  </a>
-                </li>
-              </ul>
-            </nav>
-          </div>
-        </div>
-      </header>
-      <section></section>
-      <footer></footer>
-</body>
+            <div id="navbar_sidePanel_container">
+                <div id="navbar_sidePanelHead">
+                    <div></div>
+                    <span>Explorar por categoría</span>
+                    <button id="close_navbar_button" class="z-button" type="button">
+                        <img src="./src/icons/close.svg" alt="Cerrar menu"/>
+                    </button>
+                </div>
+                <div id="navbar_sidePanelCategoryMenu">
+                    <nav>
+                        <ul>
+                            <li class="navbar_sidePanelCategoryMenu_element">
+                                <a href="">
+                                    <div class="navbar_sidePanelCategoryMenu_linkImage">
+                                        <div style="background-image: url(./src/images/categories/infantiles.jpeg);"></div>
+                                    </div>
+                                    <div class="navbar_sidePanelCategoryMenu_linkText">
+                                        <span>Infantiles</span>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="navbar_sidePanelCategoryMenu_element">
+                                <a href="">
+                                    <div class="navbar_sidePanelCategoryMenu_linkImage">
+                                        <div style="background-image: url(./src/images/categories/patchwork.jpeg);"></div>
+                                    </div>
+                                    <div class="navbar_sidePanelCategoryMenu_linkText">
+                                        <span>Patchwork</span>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="navbar_sidePanelCategoryMenu_element">
+                                <a href="">
+                                    <div class="navbar_sidePanelCategoryMenu_linkImage">
+                                        <div style="background-image: url(./src/images/categories/basicos.jpg);"></div>
+                                    </div>
+                                    <div class="navbar_sidePanelCategoryMenu_linkText">
+                                        <span>Básicos</span>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="navbar_sidePanelCategoryMenu_element">
+                                <a href="">
+                                    <div class="navbar_sidePanelCategoryMenu_linkImage">
+                                        <div style="background-image: url(./src/images/categories/carnaval.jpg);"></div>
+                                    </div>
+                                    <div class="navbar_sidePanelCategoryMenu_linkText">
+                                        <span>Carnaval</span>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="navbar_sidePanelCategoryMenu_element">
+                                <a href="">
+                                    <div class="navbar_sidePanelCategoryMenu_linkImage">
+                                        <div style="background-image: url(./src/images/categories/moda.jpeg);"></div>
+                                    </div>
+                                    <div class="navbar_sidePanelCategoryMenu_linkText">
+                                        <span>Moda</span>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="navbar_sidePanelCategoryMenu_element">
+                                <a href="">
+                                    <div class="navbar_sidePanelCategoryMenu_linkImage">
+                                        <div style="background-image: url(./src/images/categories/hogar.jpeg);"></div>
+                                    </div>
+                                    <div class="navbar_sidePanelCategoryMenu_linkText">
+                                        <span>Hogar</span>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="navbar_sidePanelCategoryMenu_element">
+                                <a href="">
+                                    <div class="navbar_sidePanelCategoryMenu_linkImage">
+                                        <div style="background-image: url(./src/images/categories/complementos.jpeg);"></div>
+                                    </div>
+                                    <div class="navbar_sidePanelCategoryMenu_linkText">
+                                        <span>Complementos</span>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="navbar_sidePanelCategoryMenu_element">
+                                <a href="">
+                                    <div class="navbar_sidePanelCategoryMenu_linkImage">
+                                        <div style="background-image: url(./src/images/categories/ofertas.jpeg);"></div>
+                                    </div>
+                                    <div class="navbar_sidePanelCategoryMenu_linkText" >
+                                        <span type="sales">Ofertas</span>
+                                    </div>
+                                </a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+                <div class="navbar_sidePanelCategoryContainer">
+                    <ul>
+                        <li>
+                            <a href="">
+                                <span>Ayuda</span>
+                                <div>
+                                    <img src="./src/icons/right.svg" alt="Ir a Ayuda">
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <span>Newsletter</span>
+                                <div>
+                                    <img src="./src/icons/right.svg" alt="Ir a Ayuda">
+                                </div>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="navbar_sidePanelCategoryContainer">
+                    <ul>
+                        <li>
+                            <a href="">
+                                <span>Cerrar sesión</span>
+                                <div>
+                                    <img src="./src/icons/right.svg" alt="Ir a Ayuda">
+                                </div>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </header>
+        <section></section>
+        <footer></footer>
+    </body>
+    <script src="main.js"></script>
 </html>
+
