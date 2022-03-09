@@ -9,6 +9,83 @@
     <script src="main.js"></script>
 </head>
 <body>
-    
+    <header>
+        <div>
+          <div id="navbar_topRow">
+            <img id="logo_image" src="./src/logo/logo.svg" />
+            <div class="navTools">
+              <div>
+                <a title="Mi cuenta" href="#">
+                  <img src="./src/icons/user.svg" />
+                </a>
+              </div>
+              <div>
+                <a title="Mis favoritos" href="#">
+                  <img src="./src/icons/heart.svg" />
+                </a>
+              </div>
+              <div>
+                <a title="Mi carrito" href="#">
+                  <img src="./src/icons/bag.svg" />
+                </a>
+              </div>
+            </div>
+          </div>
+          <div id="navbar_bottomRow">
+            <div id="navbar_button">
+              <a title="Mi carrito" href="#">
+                <img src="./src/icons/navbar.svg" />
+              </a>
+            </div>
+            <div id="navbar_search_container">
+              <form action="">
+                <button class="z-button" type="submit">
+                  <img src="./src/icons/search.svg" />
+                </button>
+                <div>
+                  <input
+                    type="search"
+                    name="navbar_search"
+                    id="navbar_search"
+                    placeholder="Busca aquí"
+                    aria-label="Busca aquí"
+                  />
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+        <div id="navbar_sidePanel_container">
+          <div id="navbar_sidePanelHead">
+            <div></div>
+            <span>Explorar por categoría</span>
+            <button class="z-button" type="button">
+              <img src="./src/icons/close.svg" />
+            </button>
+          </div>
+          <div id="navbar_sidePanelCategoryMenu">
+            <nav>
+              <ul>
+                <li class="navbar_sidePanelCategoryMenu_element">
+                  <a href="">
+                    <div class="navbar_sidePanelCategoryMenu_linkImage">
+                      <div
+                        style="
+                          background-image: url(./src/images/categories/infantiles.jpeg);
+                        "
+                      ></div>
+                    </div>
+                    <div class="navbar_sidePanelCategoryMenu_linkText">
+                      <span>Infantiles</span>
+                    </div>
+                  </a>
+                </li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+      </header>
+      <section></section>
+      <footer></footer>
 </body>
 </html>
