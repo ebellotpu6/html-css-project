@@ -10,9 +10,19 @@
 
     <body>
         <header>
-            <div>
+            <div id="header_uspBar">
+                <div>
+                    <a href="" title="Encuentra respuestas a preguntas frequentes o contáctenos.">Ayuda y contacto</a>
+                    <a href="" title="Las devoluciones són siempre gratiuitas. Los envíos son gratiuitos en pedidos a partir de 60€, para compras inferiores el coste del envío mínimo es de 4,95€.">Envíos y devoluciones gratiuitas</a>
+                    <a href="" title="Al recibir tus productos dispones de 100 días para realizar una devolución.">Derecho de devolución de 100 días</a>
+                </div>
+            </div>
+            <div id="navbar_container">
                 <div id="navbar_topRow">
-                    <img id="logo_image" src="./src/logo/logo.svg" />
+                    <div></div>
+                    <a href="#">
+                        <img id="logo_image" src="./src/logo/logo.svg" />
+                    </a>
                     <div class="navTools">
                         <div>
                             <a title="Mi cuenta" href="#">
@@ -35,6 +45,36 @@
                     <button id="navbar_button" class="z-button" type="button">
                         <img src="./src/icons/navbar.svg" />
                     </button>
+                    <div>
+                        <nav id="navbar_category_container">
+                            <ul>
+                                <li class="navbar-categoryLink">
+                                    <a href="">Infantiles</a>
+                                </li>
+                                <li class="navbar-categoryLink">
+                                    <a href="">Patchwork</a>
+                                </li>
+                                <li class="navbar-categoryLink">
+                                    <a href="">Básicos</a>
+                                </li>
+                                <li class="navbar-categoryLink">
+                                    <a href="">Carnaval</a>
+                                </li>
+                                <li class="navbar-categoryLink">
+                                    <a href="">Moda</a>
+                                </li>
+                                <li class="navbar-categoryLink">
+                                    <a href="">Hogar</a>
+                                </li>
+                                <li class="navbar-categoryLink">
+                                    <a href="">Complementos</a>
+                                </li>
+                                <li class="navbar-categoryLink">
+                                    <a href="" type="sales">Ofertas</a>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
                     <div id="navbar_search_container">
                         <form action="">
                             <button class="z-button" type="submit">
@@ -47,6 +87,7 @@
                     </div>
                 </div>
             </div>
+            <div id="navbar_categoryOverlayConatainer"></div>
             <div id="navbar_sidePanel_container">
                 <div id="navbar_sidePanelHead">
                     <div></div>

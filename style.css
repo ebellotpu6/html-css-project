@@ -11,15 +11,47 @@ body {
 
 /* HEADER */
 
+#header_uspBar {
+    display: none;
+    font-size: 12px;
+    line-height: 16px;
+    background-color: #efeff0;
+}
+
+#header_uspBar > div{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: 24px;
+    margin-right: 24px;
+    height: 32px;
+}
+
+#header_uspBar > div > a{
+    text-decoration: none;
+    color: #66676e;
+}
+
+#navbar_container {
+    width: auto;
+}
+
 #navbar_topRow {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 0.5em 0 0.5em 1em;
+    padding-top: 8px;
+    padding-bottom: 8px;
+}
+
+#navbar_topRow > div:first-child {
+    display: none;
+    flex-basis: 50%;
 }
 
 #logo_image {
-    width: 18em;
+    width: 50vw;
+    max-width: 300px;
 }
 
 .navTools {
@@ -48,6 +80,7 @@ body {
 
 #navbar_bottomRow {
     display: flex;
+    justify-content: flex-start;
     align-items: center;
     border: 1px solid #d0d1d3;
     border-right: none;
@@ -68,6 +101,39 @@ body {
 #navbar_button > img {
     height: 24px;
     width: 20px;
+}
+
+#navbar_category_container {
+    display: none;
+    will-change: opacity;
+    height: 36px;
+}
+
+#navbar_category_container > ul {
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar-categoryLink {
+    display: inline-flex;
+    cursor: pointer;
+    flex-direction: column;
+    letter-spacing: 1px;
+    padding: 10px 8px;
+}
+
+.navbar-categoryLink > a{
+    text-decoration: none;
+    color: #1a1a1a;
+    font-weight: 400;
+}
+
+
+.navbar-categoryLink > a[type="sales"]{
+    color: #00da86;
 }
 
 #navbar_search_container {
@@ -204,7 +270,7 @@ body {
 }
 
 .navbar_sidePanelCategoryMenu_linkText > span[type="sales"] {
-    color: #da0000;
+    color: #00da86;
 }
 
 .navbar_sidePanelCategoryContainer {
@@ -229,6 +295,118 @@ body {
     text-decoration: none;
     padding: 18px 26px;
     color: #1a1a1a;
+}
+
+#navbar_categoryOverlayConatainer {
+    position: absolute;
+    width: 100%;
+    z-index: 1;
+    height: 488px;
+    max-height: 0;
+    overflow: hidden;
+    background: #ffffff;
+    transition: max-height .3s ease-in-out, border-bottom .3s ease-in-out;
+    transition-delay: .1s;
+    transform: translateZ(0);
+    transform-style: preserve-3d;
+    backface-visibility: hidden;
+}
+
+@media screen and (min-width: 768px) {
+    
+}
+
+@media screen and (max-width: 1023px) {
+    #navbar_topRow {
+        padding-left: 17px;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    #header_uspBar {
+        display: block;
+    }
+
+    #navbar_container {
+        margin-left: 24px;
+        margin-right: 24px;
+    }
+
+    #navbar_topRow {
+        padding-top: 15px;
+    }
+
+    #navbar_topRow > div:first-child {
+        display: block;
+    }
+
+    #logo_image {
+        width: 300px;
+    }
+
+    #navbar_bottomRow {
+        border: none;
+        justify-content: space-between;
+        height: auto;
+    }
+
+    #navbar_button {
+        display: none;
+    }
+
+    #navbar_category_container {
+        display: block;
+    }
+
+    #navbar_category_container > ul{
+        display: block;
+        white-space: nowrap;
+    }
+
+    #navbar_search_container {
+        display: flex;
+        right: 0;
+        flex: 1 1 25%;
+        max-width: calc(25% + 20px);
+        height: auto;
+        top: 0;
+        margin-right: -32px;
+    }
+
+    #navbar_search_container > form{
+        transition: width .25s ease;
+        display: flex;
+        height: 36px;
+        background-color: #efeff0;
+    }
+
+    #navbar_search_container > form > button{
+        display: inline;
+        top: 8px;
+        left: 12px;
+        right: auto;
+        font-size: 18px;
+    }
+
+    #navbar_search{
+        padding: 6px 0;
+        margin-left: 42px;
+    }
+
+    #navbar_categoryOverlayConatainer {
+        border-bottom: 1px solid #d0d1d3;
+    }
+
+}
+
+
+@media screen and (min-width: 1280px) {
+    #header_uspBar > div, #navbar_container {
+        margin-left: auto;
+        margin-right: auto;
+        max-width: 1216px;
+    }
+    
 }
 
 /* ---------------------- */
