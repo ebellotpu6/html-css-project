@@ -48,31 +48,295 @@
                     <div>
                         <nav id="navbar_category_container">
                             <ul>
-                                <li class="navbar-categoryLink">
-                                    <a href="">Infantiles</a>
+                                <li class="navbar-categoryLink" onmouseover="showSubmenu('infantiles')";>
+                                    <a class="navbar-link" href="">Infantiles</a>
                                 </li>
-                                <li class="navbar-categoryLink">
-                                    <a href="">Patchwork</a>
+                                <li class="navbar-categoryLink" onmouseover="showSubmenu('patchwork')">
+                                    <a class="navbar-link" href="">Patchwork</a>
                                 </li>
-                                <li class="navbar-categoryLink">
-                                    <a href="">Básicos</a>
+                                <li class="navbar-categoryLink" onmouseover="showSubmenu('basicos')">
+                                    <a class="navbar-link" href="">Básicos</a>
                                 </li>
-                                <li class="navbar-categoryLink">
-                                    <a href="">Carnaval</a>
+                                <li class="navbar-categoryLink" onmouseover="showSubmenu('carnaval')">
+                                    <a class="navbar-link" href="">Carnaval</a>
                                 </li>
-                                <li class="navbar-categoryLink">
-                                    <a href="">Moda</a>
+                                <li class="navbar-categoryLink" onmouseover="showSubmenu('moda')">
+                                    <a class="navbar-link" href="">Moda</a>
                                 </li>
-                                <li class="navbar-categoryLink">
-                                    <a href="">Hogar</a>
+                                <li class="navbar-categoryLink" onmouseover="showSubmenu('hogar')">
+                                    <a class="navbar-link" href="">Hogar</a>
                                 </li>
-                                <li class="navbar-categoryLink">
-                                    <a href="">Complementos</a>
+                                <li class="navbar-categoryLink" onmouseover="showSubmenu('complementos')">
+                                    <a class="navbar-link" href="">Complementos</a>
                                 </li>
-                                <li class="navbar-categoryLink">
-                                    <a href="" type="sales">Ofertas</a>
+                                <li class="navbar-categoryLink" onmouseover="showSubmenu('ofertas')">
+                                    <a class="navbar-link" href="" type="sales">Ofertas</a>
                                 </li>
                             </ul>
+
+                            <div id="navbar_categoryOverlayConatainer" class="navbar_categoryOverlayConatainer">
+                                <div id="navbar_subCategoryContainer">
+                                    <div>
+                                        <div>
+                                            <div>
+                                                <div id="navbar_subMenu_container"> 
+                                                    <ul class="navbar-subMenu" reference="infantiles">
+                                                        <li>
+                                                            <div>
+                                                                <a href="">Disney</a>
+                                                            </div>
+                                                        </li>
+                                                        <li>
+                                                            <div>
+                                                                <a href="">Infantil</a>
+                                                            </div>
+                                                        </li>
+                                                        <li>
+                                                            <div>
+                                                                <a href="">Chromatics</a>
+                                                            </div>
+                                                        </li>
+                                                        <li>
+                                                            <div>
+                                                                <a href="">Algodones digitales</a>
+                                                            </div>
+                                                        </li>
+                                                        <li>
+                                                            <div>
+                                                                <a href="">Punto Waffle</a>
+                                                            </div>
+                                                        </li>
+                                                        <li>
+                                                            <div>
+                                                                <a href="">Franela</a>
+                                                            </div>
+                                                        </li>
+                                                        <li>
+                                                            <div>
+                                                                <a href="">Sudadera de invierno</a>
+                                                            </div>
+                                                        </li>
+                                                        <li>
+                                                            <div>
+                                                                <a href="">Coralina Estampada</a>
+                                                            </div>
+                                                        </li>
+                                                        <li>
+                                                            <div>
+                                                                <a href="">Softshell</a>
+                                                            </div>
+                                                        </li>
+                                                    </ul>
+                                                    <ul class="navbar-subMenu" reference="patchwork">
+                                                        <li>
+                                                            <div>
+                                                                <a href="">Cretona Lisa</a>
+                                                            </div>
+                                                        </li>
+                                                        <li>
+                                                            <div>
+                                                                <a href="">Cretona estampada</a>
+                                                            </div>
+                                                        </li>
+                                                        <li>
+                                                            <div>
+                                                                <a href="">Chromatics</a>
+                                                            </div>
+                                                        </li>
+                                                        <li>
+                                                            <div>
+                                                                <a href="">Lorraine</a>
+                                                            </div>
+                                                        </li>
+                                                        <li>
+                                                            <div>
+                                                                <a href="">Artcraft</a>
+                                                            </div>
+                                                        </li>
+                                                    </ul>
+                                                    <ul class="navbar-subMenu" reference="basicos">
+                                                        <li>
+                                                            <div>
+                                                                <a href="">Cretona Lisa</a>
+                                                            </div>
+                                                        </li>
+                                                        <li>
+                                                            <div>
+                                                                <a href="">Cretona estampada</a>
+                                                            </div>
+                                                        </li>
+                                                        <li>
+                                                            <div>
+                                                                <a href="">Chromatics</a>
+                                                            </div>
+                                                        </li>
+                                                        <li>
+                                                            <div>
+                                                                <a href="">Lorraine</a>
+                                                            </div>
+                                                        </li>
+                                                        <li>
+                                                            <div>
+                                                                <a href="">Artcraft</a>
+                                                            </div>
+                                                        </li>
+                                                    </ul>
+                                                    <ul class="navbar-subMenu" reference="carnaval">
+                                                        <li>
+                                                            <div>
+                                                                <a href="">Cretona Lisa</a>
+                                                            </div>
+                                                        </li>
+                                                        <li>
+                                                            <div>
+                                                                <a href="">Cretona estampada</a>
+                                                            </div>
+                                                        </li>
+                                                        <li>
+                                                            <div>
+                                                                <a href="">Chromatics</a>
+                                                            </div>
+                                                        </li>
+                                                        <li>
+                                                            <div>
+                                                                <a href="">Lorraine</a>
+                                                            </div>
+                                                        </li>
+                                                        <li>
+                                                            <div>
+                                                                <a href="">Artcraft</a>
+                                                            </div>
+                                                        </li>
+                                                    </ul>
+                                                    <ul class="navbar-subMenu" reference="moda">
+                                                        <li>
+                                                            <div>
+                                                                <a href="">Cretona Lisa</a>
+                                                            </div>
+                                                        </li>
+                                                        <li>
+                                                            <div>
+                                                                <a href="">Cretona estampada</a>
+                                                            </div>
+                                                        </li>
+                                                        <li>
+                                                            <div>
+                                                                <a href="">Chromatics</a>
+                                                            </div>
+                                                        </li>
+                                                        <li>
+                                                            <div>
+                                                                <a href="">Lorraine</a>
+                                                            </div>
+                                                        </li>
+                                                        <li>
+                                                            <div>
+                                                                <a href="">Artcraft</a>
+                                                            </div>
+                                                        </li>
+                                                    </ul>
+                                                    <ul class="navbar-subMenu" reference="hogar">
+                                                        <li>
+                                                            <div>
+                                                                <a href="">Cretona Lisa</a>
+                                                            </div>
+                                                        </li>
+                                                        <li>
+                                                            <div>
+                                                                <a href="">Cretona estampada</a>
+                                                            </div>
+                                                        </li>
+                                                        <li>
+                                                            <div>
+                                                                <a href="">Chromatics</a>
+                                                            </div>
+                                                        </li>
+                                                        <li>
+                                                            <div>
+                                                                <a href="">Lorraine</a>
+                                                            </div>
+                                                        </li>
+                                                        <li>
+                                                            <div>
+                                                                <a href="">Artcraft</a>
+                                                            </div>
+                                                        </li>
+                                                    </ul>
+                                                    <ul class="navbar-subMenu" reference="complementos">
+                                                        <li>
+                                                            <div>
+                                                                <a href="">Cretona Lisa</a>
+                                                            </div>
+                                                        </li>
+                                                        <li>
+                                                            <div>
+                                                                <a href="">Cretona estampada</a>
+                                                            </div>
+                                                        </li>
+                                                        <li>
+                                                            <div>
+                                                                <a href="">Chromatics</a>
+                                                            </div>
+                                                        </li>
+                                                        <li>
+                                                            <div>
+                                                                <a href="">Lorraine</a>
+                                                            </div>
+                                                        </li>
+                                                        <li>
+                                                            <div>
+                                                                <a href="">Artcraft</a>
+                                                            </div>
+                                                        </li>
+                                                    </ul>
+                                                    <ul class="navbar-subMenu" reference="ofertas">
+                                                        <li>
+                                                            <div>
+                                                                <a href="">Cretona Lisa</a>
+                                                            </div>
+                                                        </li>
+                                                        <li>
+                                                            <div>
+                                                                <a href="">Cretona estampada</a>
+                                                            </div>
+                                                        </li>
+                                                        <li>
+                                                            <div>
+                                                                <a href="">Chromatics</a>
+                                                            </div>
+                                                        </li>
+                                                        <li>
+                                                            <div>
+                                                                <a href="">Lorraine</a>
+                                                            </div>
+                                                        </li>
+                                                        <li>
+                                                            <div>
+                                                                <a href="">Artcraft</a>
+                                                            </div>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                            <div>
+                                                <div id="navbar_subMenuImage_container">
+                                                    <a href="">
+                                                        <div id="navbar_subMenuImage"></div>
+                                                    </a>
+                                                    <div>
+                                                        <a href="">
+                                                            <span class="navbar-link">
+                                                                Descubre la colección
+                                                                <img src="./src/icons/rightrow.svg" alt="">
+                                                            </span>
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                         </nav>
                     </div>
                     <div id="navbar_search_container">
@@ -87,67 +351,7 @@
                     </div>
                 </div>
             </div>
-            <div class="navbar_categoryOverlayConatainer navbar_categoryOverlayConatainer-open">
-                <div id="navbar_subCategoryContainer">
-                    <div>
-                        <div>
-                            <div>
-                                <div id="navbar_subMenu_container"> 
-                                    <ul id="navbar_subMenu">
-                                        <li>
-                                            <div>
-                                                <a href="">Disney</a>
-                                            </div>
-                                        </li>
-                                        <li>
-                                            <div>
-                                                <a href="">Infantil</a>
-                                            </div>
-                                        </li>
-                                        <li>
-                                            <div>
-                                                <a href="">Chromatics</a>
-                                            </div>
-                                        </li>
-                                        <li>
-                                            <div>
-                                                <a href="">Algodones digitales</a>
-                                            </div>
-                                        </li>
-                                        <li>
-                                            <div>
-                                                <a href="">Punto Waffle</a>
-                                            </div>
-                                        </li>
-                                        <li>
-                                            <div>
-                                                <a href="">Franela</a>
-                                            </div>
-                                        </li>
-                                        <li>
-                                            <div>
-                                                <a href="">Sudadera de invierno</a>
-                                            </div>
-                                        </li>
-                                        <li>
-                                            <div>
-                                                <a href="">Coralina Estampada</a>
-                                            </div>
-                                        </li>
-                                        <li>
-                                            <div>
-                                                <a href="">Softshell</a>
-                                            </div>
-                                        </li>
-                                    </ul>
-                                </div>
-                            </div>
-                            <div></div>
-                        </div>
-                    </div>
-                </div>
-
-            </div>
+            <div class="navbar_categoryOverlayContainer_border"></div>
             <div id="navbar_sidePanel_container">
                 <div id="navbar_sidePanelHead">
                     <div></div>
@@ -182,7 +386,7 @@
                             <li class="navbar_sidePanelCategoryMenu_element">
                                 <a href="">
                                     <div class="navbar_sidePanelCategoryMenu_linkImage">
-                                        <div style="background-image: url(./src/images/categories/basicos.jpg);"></div>
+                                        <div style="background-image: url(./src/images/categories/basicos.jpeg);"></div>
                                     </div>
                                     <div class="navbar_sidePanelCategoryMenu_linkText">
                                         <span>Básicos</span>
@@ -192,7 +396,7 @@
                             <li class="navbar_sidePanelCategoryMenu_element">
                                 <a href="">
                                     <div class="navbar_sidePanelCategoryMenu_linkImage">
-                                        <div style="background-image: url(./src/images/categories/carnaval.jpg);"></div>
+                                        <div style="background-image: url(./src/images/categories/carnaval.jpeg);"></div>
                                     </div>
                                     <div class="navbar_sidePanelCategoryMenu_linkText">
                                         <span>Carnaval</span>

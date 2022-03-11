@@ -299,6 +299,8 @@ body {
 
 .navbar_categoryOverlayConatainer {
     position: absolute;
+    top: 157.5px;
+    left: 0;
     width: 100%;
     z-index: 1;
     height: 488px;
@@ -314,7 +316,6 @@ body {
 
 .navbar_categoryOverlayConatainer.navbar_categoryOverlayConatainer-open {
     max-height: 488px;
-    border-top: 1px solid #d0d1d3;
     border-bottom: 2px solid #1a1a1a;
 }
 
@@ -339,7 +340,7 @@ body {
 
 #navbar_subCategoryContainer > div > div {
     display: flex;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
     max-width: 100%;
 }
 
@@ -355,31 +356,94 @@ body {
     width: calc(100% + 16px);
 }
 
-#navbar_subMenu {
-    display: grid;
+.navbar-subMenu {
+    display: none;
     grid-template-columns: repeat(3, 1fr);
     grid-gap: 10px 20px;
     padding: 6px;
     list-style: none;
 }
 
-#navbar_subMenu > li {
+.navbar-subMenu > li {
     margin-bottom: 16px;
 }
 
-#navbar_subMenu > li a{
+.navbar-subMenu > li a{
     text-decoration: none;
     font-size: 1rem;
     color: #1a1a1a;
 }
 
-
-
 #navbar_subCategoryContainer > div > div > div:nth-child(2) {
     flex-basis: 25%;
     max-width: 25%;
+    padding-left: 8px;
+    padding-right: 8px;
 }
 
+#navbar_subMenuImage_container {
+    background-color: #00da86;
+    padding-left: 20px;
+}
+
+#navbar_subMenuImage_container > a{
+    display: block;
+    height: 300px;
+}
+
+#navbar_subMenuImage_container > a > div {
+    width: 100%;
+    height: 100%;
+    flex: 1 1 auto;
+    background-repeat: no-repeat;
+    background-position: top;
+    background-size: cover;
+    background-color: #efeff0;
+}
+
+#navbar_subMenuImage_container > div {
+    padding-top: 16px;
+    padding-bottom: 16px;
+    height: auto;
+}
+
+#navbar_subMenuImage_container > div > a {
+    text-decoration: none;
+    background-color: transparent;
+}
+
+#navbar_subMenuImage_container > div > a > span{
+    display: flex;
+    width: fit-content;
+    color: #1a1a1a;
+    font-size: 0.875rem;
+    letter-spacing: 0;
+    line-height: 1.25rem;
+    font-weight: 700;
+}
+
+#navbar_subMenuImage_container > div > a > span > img{
+    margin-left: 8px;
+}
+
+.navbar-link {
+    position: relative;
+}
+
+.navbar-link::after {
+    content: "";
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    display: block;
+    transition: border .15s ease-in-out;
+    width: 100%;
+    border-bottom: 2px solid transparent;
+}
+
+.navbar-link:hover::after{
+    border-bottom-color: inherit;
+}
 
 @media screen and (min-width: 768px) {
     
@@ -462,7 +526,7 @@ body {
         margin-left: 42px;
     }
 
-    .navbar_categoryOverlayConatainer {
+    .navbar_categoryOverlayContainer_border {
         border-bottom: 1px solid #d0d1d3;
     }
 
@@ -480,6 +544,15 @@ body {
         margin-left: auto;
         margin-right: auto;
         max-width: 1216px;
+    }
+
+    #navbar_subMenuImage_container > a{
+        height: 385px;
+    }
+
+    #navbar_search_container {
+        margin-right: 0;
+        transition: margin-right .5s linear;
     }
     
 }
