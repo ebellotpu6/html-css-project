@@ -24,20 +24,49 @@
                         <img id="logo_image" src="./src/logo/logo.svg" />
                     </a>
                     <div class="navTools">
-                        <div>
+                        <div class="navTools-dropDown">
                             <a title="Mi cuenta" href="#">
-                                <img src="./src/icons/user.svg" />
+                                <img alt="Mi cuenta" src="./src/icons/user.svg" />
                             </a>
+                            <div id="navbar_userAccount_container"> 
+                                <ul>
+                                    <li>
+                                        <a class="navbar-link" href="">Mi perfil</a>
+                                    </li>
+                                    <li>
+                                        <a class="navbar-link" href="">Mis pedidos</a>
+                                    </li>
+                                    <li>
+                                        <a class="navbar-link" href="">Ayuda y contacto</a>
+                                    </li>
+                                </ul>
+                                <div id="navbar_userAccountLogOut">
+                                    <a class="navbar-link" href="">¿No eres Emili Bellot? <b>Desconectar</b></a>
+                                </div>
+                            </div>
                         </div>
                         <div>
                             <a title="Mis favoritos" href="#">
-                                <img src="./src/icons/heart.svg" />
+                                <span class="navToolCounter">6</span>
+                                <img alt="Mis favoritos" src="./src/icons/heart.svg" />
                             </a>
                         </div>
-                        <div>
+                        <div class="navTools-dropDown">
                             <a title="Mi carrito" href="#">
-                                <img src="./src/icons/bag.svg" />
+                                <img alt="Mi carrito" src="./src/icons/bag.svg" />
                             </a>
+                            <div id="navbar_userCart_container"> 
+                                <div>
+                                    <span>Tu cesta</span>
+                                    <p>Llena tu cesta de nuevas tendencias</p>
+                                </div>
+                                <div>
+                                    <span>¿Necesitas inspitación?</span>
+                                    <button class="z-button z-button-1">
+                                        <span>Ver novedades</span>
+                                    </button>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -83,236 +112,696 @@
                                                     <ul class="navbar-subMenu" reference="infantiles">
                                                         <li>
                                                             <div>
-                                                                <a href="">Disney</a>
+                                                                <a class="navbar-link" href="">Disney</a>
                                                             </div>
                                                         </li>
                                                         <li>
                                                             <div>
-                                                                <a href="">Infantil</a>
+                                                                <a class="navbar-link" href="">Infantil</a>
                                                             </div>
                                                         </li>
                                                         <li>
                                                             <div>
-                                                                <a href="">Chromatics</a>
+                                                                <a class="navbar-link" href="">Chromatics</a>
                                                             </div>
                                                         </li>
                                                         <li>
                                                             <div>
-                                                                <a href="">Algodones digitales</a>
+                                                                <a class="navbar-link" href="">Algodones digitales</a>
                                                             </div>
                                                         </li>
                                                         <li>
                                                             <div>
-                                                                <a href="">Punto Waffle</a>
+                                                                <a class="navbar-link" href="">Waffle</a>
                                                             </div>
                                                         </li>
                                                         <li>
                                                             <div>
-                                                                <a href="">Franela</a>
+                                                                <a class="navbar-link" href="">Punto Waffle</a>
                                                             </div>
                                                         </li>
                                                         <li>
                                                             <div>
-                                                                <a href="">Sudadera de invierno</a>
+                                                                <a class="navbar-link" href="">Franela</a>
                                                             </div>
                                                         </li>
                                                         <li>
                                                             <div>
-                                                                <a href="">Coralina Estampada</a>
+                                                                <a class="navbar-link" href="">Coralina Estampada</a>
                                                             </div>
                                                         </li>
                                                         <li>
                                                             <div>
-                                                                <a href="">Softshell</a>
+                                                                <a class="navbar-link" href="">Softshell</a>
+                                                            </div>
+                                                        </li>
+                                                        <li>
+                                                            <div>
+                                                                <a class="navbar-link" href="">Tela de puño</a>
+                                                            </div>
+                                                        </li>
+                                                        <li>
+                                                            <div>
+                                                                <a class="navbar-link" href="">Piqué</a>
+                                                            </div>
+                                                        </li>
+                                                        <li>
+                                                            <div>
+                                                                <a class="navbar-link" href="">Sudadera de invierno</a>
+                                                            </div>
+                                                        </li>
+                                                        <li>
+                                                            <div>
+                                                                <a class="navbar-link" href="">Sudadera sin perchar</a>
+                                                            </div>
+                                                        </li>
+                                                        <li>
+                                                            <div>
+                                                                <a class="navbar-link" href="">Cuadros y rayas</a>
+                                                            </div>
+                                                        </li>
+                                                        <li>
+                                                            <div>
+                                                                <a class="navbar-link" href="">Plumetti de algodón</a>
+                                                            </div>
+                                                        </li>
+                                                        <li>
+                                                            <div>
+                                                                <a class="navbar-link" href="">Half Panama infantil</a>
+                                                            </div>
+                                                        </li>
+                                                        <li>
+                                                            <div>
+                                                                <a class="navbar-link" href="">Pul</a>
+                                                            </div>
+                                                        </li>
+                                                        <li>
+                                                            <div>
+                                                                <a class="navbar-link" href="">Minky</a>
+                                                            </div>
+                                                        </li>
+                                                        <li>
+                                                            <div>
+                                                                <a class="navbar-link" href="">Pana</a>
+                                                            </div>
+                                                        </li>
+                                                        <li>
+                                                            <div>
+                                                                <a class="navbar-link" href="">Punto Canalé</a>
+                                                            </div>
+                                                        </li>
+                                                        <li>
+                                                            <div>
+                                                                <a class="navbar-link" href="">Acolchado dos caras</a>
                                                             </div>
                                                         </li>
                                                     </ul>
                                                     <ul class="navbar-subMenu" reference="patchwork">
                                                         <li>
                                                             <div>
-                                                                <a href="">Cretona Lisa</a>
+                                                                <a class="navbar-link" href="">Cretona Lisa</a>
                                                             </div>
                                                         </li>
                                                         <li>
                                                             <div>
-                                                                <a href="">Cretona estampada</a>
+                                                                <a class="navbar-link" href="">Cretona estampada</a>
                                                             </div>
                                                         </li>
                                                         <li>
                                                             <div>
-                                                                <a href="">Chromatics</a>
+                                                                <a class="navbar-link" href="">Chromatics</a>
                                                             </div>
                                                         </li>
                                                         <li>
                                                             <div>
-                                                                <a href="">Lorraine</a>
+                                                                <a class="navbar-link" href="">Lorraine</a>
                                                             </div>
                                                         </li>
                                                         <li>
                                                             <div>
-                                                                <a href="">Artcraft</a>
+                                                                <a class="navbar-link" href="">Artcraft</a>
+                                                            </div>
+                                                        </li>
+                                                        <li>
+                                                            <div>
+                                                                <a class="navbar-link" href="">Entretelas y guatas</a>
+                                                            </div>
+                                                        </li>
+                                                        <li>
+                                                            <div>
+                                                                <a class="navbar-link" href="">Marmoleados</a>
+                                                            </div>
+                                                        </li>
+                                                        <li>
+                                                            <div>
+                                                                <a class="navbar-link" href="">Liberty</a>
+                                                            </div>
+                                                        </li>
+                                                        <li>
+                                                            <div>
+                                                                <a class="navbar-link" href="">Classic Patch</a>
+                                                            </div>
+                                                        </li>
+                                                        <li>
+                                                            <div>
+                                                                <a class="navbar-link" href="">Cretona estampada</a>
+                                                            </div>
+                                                        </li>
+                                                        <li>
+                                                            <div>
+                                                                <a class="navbar-link" href="">Tela de Vichy</a>
+                                                            </div>
+                                                        </li>
+                                                        <li>
+                                                            <div>
+                                                                <a class="navbar-link" href="">Le Quilt</a>
+                                                            </div>
+                                                        </li>
+                                                        <li>
+                                                            <div>
+                                                                <a class="navbar-link" href="">Spring Peacock</a>
+                                                            </div>
+                                                        </li>
+                                                        <li>
+                                                            <div>
+                                                                <a class="navbar-link" href="">Básicos</a>
+                                                            </div>
+                                                        </li>
+                                                        <li>
+                                                            <div>
+                                                                <a class="navbar-link" href="">Batik</a>
+                                                            </div>
+                                                        </li>
+                                                        <li>
+                                                            <div>
+                                                                <a class="navbar-link" href="">The red and black</a>
+                                                            </div>
+                                                        </li>
+                                                        <li>
+                                                            <div>
+                                                                <a class="navbar-link" href="">Vintage 1800's</a>
+                                                            </div>
+                                                        </li>
+                                                        <li>
+                                                            <div>
+                                                                <a class="navbar-link" href="">Country Floral</a>
+                                                            </div>
+                                                        </li>
+                                                        <li>
+                                                            <div>
+                                                                <a class="navbar-link" href="">Illuminations</a>
+                                                            </div>
+                                                        </li>
+                                                        <li>
+                                                            <div>
+                                                                <a class="navbar-link" href="">Paisley</a>
+                                                            </div>
+                                                        </li>
+                                                        <li>
+                                                            <div>
+                                                                <a class="navbar-link" href="">Patrik</a>
+                                                            </div>
+                                                        </li>
+                                                        <li>
+                                                            <div>
+                                                                <a class="navbar-link" href="">Country</a>
                                                             </div>
                                                         </li>
                                                     </ul>
                                                     <ul class="navbar-subMenu" reference="basicos">
                                                         <li>
                                                             <div>
-                                                                <a href="">Cretona Lisa</a>
+                                                                <a class="navbar-link" href="">Tela impermeable</a>
                                                             </div>
                                                         </li>
                                                         <li>
                                                             <div>
-                                                                <a href="">Cretona estampada</a>
+                                                                <a class="navbar-link" href="">Viprotect</a>
                                                             </div>
                                                         </li>
                                                         <li>
                                                             <div>
-                                                                <a href="">Chromatics</a>
+                                                                <a class="navbar-link" href="">Toalla de Bambú</a>
                                                             </div>
                                                         </li>
                                                         <li>
                                                             <div>
-                                                                <a href="">Lorraine</a>
+                                                                <a class="navbar-link" href="">Piqué</a>
                                                             </div>
                                                         </li>
                                                         <li>
                                                             <div>
-                                                                <a href="">Artcraft</a>
+                                                                <a class="navbar-link" href="">Tela de Vichy</a>
+                                                            </div>
+                                                        </li>
+                                                        <li>
+                                                            <div>
+                                                                <a class="navbar-link" href="">Tela tejana</a>
+                                                            </div>
+                                                        </li>
+                                                        <li>
+                                                            <div>
+                                                                <a class="navbar-link" href="">Sudadera sin perchar</a>
+                                                            </div>
+                                                        </li>
+                                                        <li>
+                                                            <div>
+                                                                <a class="navbar-link" href="">Punto liso</a>
+                                                            </div>
+                                                        </li>
+                                                        <li>
+                                                            <div>
+                                                                <a class="navbar-link" href="">Tela de toalla</a>
+                                                            </div>
+                                                        </li>
+                                                        <li>
+                                                            <div>
+                                                                <a class="navbar-link" href="">Cretona lisa</a>
+                                                            </div>
+                                                        </li>
+                                                        <li>
+                                                            <div>
+                                                                <a class="navbar-link" href="">Borreguito</a>
+                                                            </div>
+                                                        </li>
+                                                        <li>
+                                                            <div>
+                                                                <a class="navbar-link" href="">Velour</a>
+                                                            </div>
+                                                        </li>
+                                                        <li>
+                                                            <div>
+                                                                <a class="navbar-link" href="">Coralina</a>
+                                                            </div>
+                                                        </li>
+                                                        <li>
+                                                            <div>
+                                                                <a class="navbar-link" href="">Minky</a>
+                                                            </div>
+                                                        </li>
+                                                        <li>
+                                                            <div>
+                                                                <a class="navbar-link" href="">Sudadera de invierno</a>
+                                                            </div>
+                                                        </li>
+                                                        <li>
+                                                            <div>
+                                                                <a class="navbar-link" href="">Punto acolchado</a>
+                                                            </div>
+                                                        </li>
+                                                        <li>
+                                                            <div>
+                                                                <a class="navbar-link" href="">Stretch</a>
+                                                            </div>
+                                                        </li>
+                                                        <li>
+                                                            <div>
+                                                                <a class="navbar-link" href="">Terciopelo</a>
+                                                            </div>
+                                                        </li>
+                                                        <li>
+                                                            <div>
+                                                                <a class="navbar-link" href="">Escocés</a>
+                                                            </div>
+                                                        </li>
+                                                        <li>
+                                                            <div>
+                                                                <a class="navbar-link" href="">Arpillera</a>
+                                                            </div>
+                                                        </li>
+                                                        <li>
+                                                            <div>
+                                                                <a class="navbar-link" href="">Polipiel</a>
                                                             </div>
                                                         </li>
                                                     </ul>
                                                     <ul class="navbar-subMenu" reference="carnaval">
                                                         <li>
                                                             <div>
-                                                                <a href="">Cretona Lisa</a>
+                                                                <a class="navbar-link" href="">Estampados de Carnaval</a>
                                                             </div>
                                                         </li>
                                                         <li>
                                                             <div>
-                                                                <a href="">Cretona estampada</a>
+                                                                <a class="navbar-link" href="">Tul</a>
                                                             </div>
                                                         </li>
                                                         <li>
                                                             <div>
-                                                                <a href="">Chromatics</a>
+                                                                <a class="navbar-link" href="">Lycra</a>
                                                             </div>
                                                         </li>
                                                         <li>
                                                             <div>
-                                                                <a href="">Lorraine</a>
+                                                                <a class="navbar-link" href="">Pelo de Animales</a>
                                                             </div>
                                                         </li>
                                                         <li>
                                                             <div>
-                                                                <a href="">Artcraft</a>
+                                                                <a class="navbar-link" href="">Lámina 112cm</a>
+                                                            </div>
+                                                        </li>
+                                                        <li>
+                                                            <div>
+                                                                <a class="navbar-link" href="">Rasete</a>
+                                                            </div>
+                                                        </li>
+                                                        <li>
+                                                            <div>
+                                                                <a class="navbar-link" href="">Charol</a>
+                                                            </div>
+                                                        </li>
+                                                        <li>
+                                                            <div>
+                                                                <a class="navbar-link" href="">Lentejuela redonda</a>
+                                                            </div>
+                                                        </li>
+                                                        <li>
+                                                            <div>
+                                                                <a class="navbar-link" href="">Lentejuela cuadrada holograma</a>
+                                                            </div>
+                                                        </li>
+                                                        <li>
+                                                            <div>
+                                                                <a class="navbar-link" href="">Martelé</a>
+                                                            </div>
+                                                        </li>
+                                                        <li>
+                                                            <div>
+                                                                <a class="navbar-link" href="">Pelo</a>
+                                                            </div>
+                                                        </li>
+                                                        <li>
+                                                            <div>
+                                                                <a class="navbar-link" href="">Fieltro</a>
+                                                            </div>
+                                                        </li>
+                                                        <li>
+                                                            <div>
+                                                                <a class="navbar-link" href="">Arpillera</a>
+                                                            </div>
+                                                        </li>
+                                                        <li>
+                                                            <div>
+                                                                <a class="navbar-link" href="">Tela de raso</a>
+                                                            </div>
+                                                        </li>
+                                                        <li>
+                                                            <div>
+                                                                <a class="navbar-link" href="">Lámina metálica</a>
+                                                            </div>
+                                                        </li>
+                                                        <li>
+                                                            <div>
+                                                                <a class="navbar-link" href="">Foamizado de rasete</a>
+                                                            </div>
+                                                        </li>
+                                                        <li>
+                                                            <div>
+                                                                <a class="navbar-link" href="">Fantasias de Carnaval</a>
                                                             </div>
                                                         </li>
                                                     </ul>
                                                     <ul class="navbar-subMenu" reference="moda">
                                                         <li>
                                                             <div>
-                                                                <a href="">Cretona Lisa</a>
+                                                                <a class="navbar-link" href="">Punto Waffle</a>
                                                             </div>
                                                         </li>
                                                         <li>
                                                             <div>
-                                                                <a href="">Cretona estampada</a>
+                                                                <a class="navbar-link" href="">Tela de lino liso</a>
                                                             </div>
                                                         </li>
                                                         <li>
                                                             <div>
-                                                                <a href="">Chromatics</a>
+                                                                <a class="navbar-link" href="">Muselinas</a>
                                                             </div>
                                                         </li>
                                                         <li>
                                                             <div>
-                                                                <a href="">Lorraine</a>
+                                                                <a class="navbar-link" href="">Muselinas de Bambú</a>
                                                             </div>
                                                         </li>
                                                         <li>
                                                             <div>
-                                                                <a href="">Artcraft</a>
+                                                                <a class="navbar-link" href="">Tela de puño</a>
+                                                            </div>
+                                                        </li>
+                                                        <li>
+                                                            <div>
+                                                                <a class="navbar-link" href="">Estampados</a>
+                                                            </div>
+                                                        </li>
+                                                        <li>
+                                                            <div>
+                                                                <a class="navbar-link" href="">Pana</a>
+                                                            </div>
+                                                        </li>
+                                                        <li>
+                                                            <div>
+                                                                <a class="navbar-link" href="">Punto Jacquard</a>
+                                                            </div>
+                                                        </li>
+                                                        <li>
+                                                            <div>
+                                                                <a class="navbar-link" href="">Tecno Silk</a>
+                                                            </div>
+                                                        </li>
+                                                        <li>
+                                                            <div>
+                                                                <a class="navbar-link" href="">Gasa de poliéster</a>
+                                                            </div>
+                                                        </li>
+                                                        <li>
+                                                            <div>
+                                                                <a class="navbar-link" href="">Koshivo crepe lunares</a>
+                                                            </div>
+                                                        </li>
+                                                        <li>
+                                                            <div>
+                                                                <a class="navbar-link" href="">Tela tejana</a>
+                                                            </div>
+                                                        </li>
+                                                        <li>
+                                                            <div>
+                                                                <a class="navbar-link" href="">Crep Satén</a>
+                                                            </div>
+                                                        </li>
+                                                        <li>
+                                                            <div>
+                                                                <a class="navbar-link" href="">Punto roma liso</a>
+                                                            </div>
+                                                        </li>
+                                                        <li>
+                                                            <div>
+                                                                <a class="navbar-link" href="">Plana Bielástica</a>
+                                                            </div>
+                                                        </li>
+                                                        <li>
+                                                            <div>
+                                                                <a class="navbar-link" href="">Fantasias</a>
+                                                            </div>
+                                                        </li>
+                                                        <li>
+                                                            <div>
+                                                                <a class="navbar-link" href="">Tela de paño</a>
+                                                            </div>
+                                                        </li>
+                                                        <li>
+                                                            <div>
+                                                                <a class="navbar-link" href="">Escocés</a>
                                                             </div>
                                                         </li>
                                                     </ul>
                                                     <ul class="navbar-subMenu" reference="hogar">
                                                         <li>
                                                             <div>
-                                                                <a href="">Cretona Lisa</a>
+                                                                <a class="navbar-link" href="">Canvas liso</a>
                                                             </div>
                                                         </li>
                                                         <li>
                                                             <div>
-                                                                <a href="">Cretona estampada</a>
+                                                                <a class="navbar-link" href="">Dralón Teflón</a>
                                                             </div>
                                                         </li>
                                                         <li>
                                                             <div>
-                                                                <a href="">Chromatics</a>
+                                                                <a class="navbar-link" href="">Canvas Brends</a>
                                                             </div>
                                                         </li>
                                                         <li>
                                                             <div>
-                                                                <a href="">Lorraine</a>
+                                                                <a class="navbar-link" href="">Loneta lisa</a>
                                                             </div>
                                                         </li>
                                                         <li>
                                                             <div>
-                                                                <a href="">Artcraft</a>
+                                                                <a class="navbar-link" href="">Loneta estampada</a>
+                                                            </div>
+                                                        </li>
+                                                        <li>
+                                                            <div>
+                                                                <a class="navbar-link" href="">Half Panama</a>
+                                                            </div>
+                                                        </li>
+                                                        <li>
+                                                            <div>
+                                                                <a class="navbar-link" href="">Mantelerías</a>
+                                                            </div>
+                                                        </li>
+                                                        <li>
+                                                            <div>
+                                                                <a class="navbar-link" href="">Telas de Lino</a>
+                                                            </div>
+                                                        </li>
+                                                        <li>
+                                                            <div>
+                                                                <a class="navbar-link" href="">Acolchado dos caras 270cm</a>
+                                                            </div>
+                                                        </li>
+                                                        <li>
+                                                            <div>
+                                                                <a class="navbar-link" href="">Chenilla</a>
+                                                            </div>
+                                                        </li>
+                                                        <li>
+                                                            <div>
+                                                                <a class="navbar-link" href="">Polipiel</a>
+                                                            </div>
+                                                        </li>
+                                                        <li>
+                                                            <div>
+                                                                <a class="navbar-link" href="">Alcantara</a>
+                                                            </div>
+                                                        </li>
+                                                        <li>
+                                                            <div>
+                                                                <a class="navbar-link" href="">Antelina</a>
+                                                            </div>
+                                                        </li>
+                                                        <li>
+                                                            <div>
+                                                                <a class="navbar-link" href="">FUR</a>
+                                                            </div>
+                                                        </li>
+                                                        <li>
+                                                            <div>
+                                                                <a class="navbar-link" href="">Gobelinos</a>
+                                                            </div>
+                                                        </li>
+                                                        <li>
+                                                            <div>
+                                                                <a class="navbar-link" href="">Visillo</a>
+                                                            </div>
+                                                        </li>
+                                                        <li>
+                                                            <div>
+                                                                <a class="navbar-link" href="">Terciopelo</a>
+                                                            </div>
+                                                        </li>
+                                                        <li>
+                                                            <div>
+                                                                <a class="navbar-link" href="">Panama de algodón</a>
+                                                            </div>
+                                                        </li>
+                                                        <li>
+                                                            <div>
+                                                                <a class="navbar-link" href="">Mantelerías de Navidad</a>
+                                                            </div>
+                                                        </li>
+                                                        <li>
+                                                            <div>
+                                                                <a class="navbar-link" href="">Stripe Fabrics</a>
+                                                            </div>
+                                                        </li>
+                                                        <li>
+                                                            <div>
+                                                                <a class="navbar-link" href="">Jacquard</a>
                                                             </div>
                                                         </li>
                                                     </ul>
                                                     <ul class="navbar-subMenu" reference="complementos">
                                                         <li>
                                                             <div>
-                                                                <a href="">Cretona Lisa</a>
+                                                                <a class="navbar-link" href="">Plástico alimentario EVA</a>
                                                             </div>
                                                         </li>
                                                         <li>
                                                             <div>
-                                                                <a href="">Cretona estampada</a>
+                                                                <a class="navbar-link" href="">Tela de puño</a>
                                                             </div>
                                                         </li>
                                                         <li>
                                                             <div>
-                                                                <a href="">Chromatics</a>
+                                                                <a class="navbar-link" href="">TNT tela sin tejer</a>
                                                             </div>
                                                         </li>
                                                         <li>
                                                             <div>
-                                                                <a href="">Lorraine</a>
+                                                                <a class="navbar-link" href="">Guata</a>
                                                             </div>
                                                         </li>
                                                         <li>
                                                             <div>
-                                                                <a href="">Artcraft</a>
+                                                                <a class="navbar-link" href="">Entretela</a>
+                                                            </div>
+                                                        </li>
+                                                        <li>
+                                                            <div>
+                                                                <a class="navbar-link" href="">Mallas</a>
+                                                            </div>
+                                                        </li>
+                                                        <li>
+                                                            <div>
+                                                                <a class="navbar-link" href="">Mallas 3D</a>
+                                                            </div>
+                                                        </li>
+                                                        <li>
+                                                            <div>
+                                                                <a class="navbar-link" href="">Toldo de sobra</a>
+                                                            </div>
+                                                        </li>
+                                                        <li>
+                                                            <div>
+                                                                <a class="navbar-link" href="">Aislante térmico</a>
+                                                            </div>
+                                                        </li>
+                                                        <li>
+                                                            <div>
+                                                                <a class="navbar-link" href="">Rejilla semirígida</a>
+                                                            </div>
+                                                        </li>
+                                                        <li>
+                                                            <div>
+                                                                <a class="navbar-link" href="">Tela de pizarra</a>
+                                                            </div>
+                                                        </li>
+                                                        <li>
+                                                            <div>
+                                                                <a class="navbar-link" href="">Estabilizador aislante térmico</a>
+                                                            </div>
+                                                        </li>
+                                                        <li>
+                                                            <div>
+                                                                <a class="navbar-link" href="">Glasilla</a>
                                                             </div>
                                                         </li>
                                                     </ul>
                                                     <ul class="navbar-subMenu" reference="ofertas">
                                                         <li>
                                                             <div>
-                                                                <a href="">Cretona Lisa</a>
+                                                                <a class="navbar-link" href="">Ofertas de algodón</a>
                                                             </div>
                                                         </li>
                                                         <li>
                                                             <div>
-                                                                <a href="">Cretona estampada</a>
+                                                                <a class="navbar-link" href="">Ofertas de moda</a>
                                                             </div>
                                                         </li>
                                                         <li>
                                                             <div>
-                                                                <a href="">Chromatics</a>
-                                                            </div>
-                                                        </li>
-                                                        <li>
-                                                            <div>
-                                                                <a href="">Lorraine</a>
-                                                            </div>
-                                                        </li>
-                                                        <li>
-                                                            <div>
-                                                                <a href="">Artcraft</a>
+                                                                <a class="navbar-link" href="">Ofertas de hogar</a>
                                                             </div>
                                                         </li>
                                                     </ul>
@@ -480,7 +969,242 @@
                 </div>
             </div>
         </header>
-        <section></section>
+        <section>
+            <div class="collection-section-container">
+                <div>
+                    <div class="collection-description-container">
+                        <div>
+                            <h2>Telas de cocina</h2>
+                            <h4>Recien llegados</h4>
+                            <div>
+                                <a href="">
+                                    <span class="navbar-link">
+                                        Ver más
+                                        <img src="./src/icons/rightrow.svg" alt="Ver más.">
+                                    </span>
+                                </a>
+                            </div>
+                        </div>
+                        <div>
+                            <img src="./src/images/colecciones/telas_cocina.jpg" alt="">
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="collection-products-container">
+                    <ul class="product-list">
+                        <li class="product-listItem">
+                            <div>
+                                <a href="">
+                                    <div>
+                                        <img class="product-listItem-img" src="./src/images/productos/Legumes_1_112.jpg" alt="LeQuilt Legumes 1" sizes="(max-width: 767px) calc(50vw - 36px), (min-width: 768px) and (max-width: 1280px) calc(25vw - 64px), 284px" width="300" height="433">
+                                    </div>
+                                </a>
+                                <div class="add-favoriteButton">
+                                    <button class="z-button">
+                                        <img src="./src/icons/heart.svg" alt="Añadir a favoritos">
+                                    </button>
+                                </div>
+                                <div class="product-info">
+                                    <a href="">
+                                        <div>
+                                            <div class="product-infoName">LeQuilt</div>
+                                            <div class="product-infoReference">Legumes 1</div>
+                                        </div>
+                                        <div>
+                                            <span class="product-infoPrice">9,95€/m</span>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="product-listItem">
+                            <div>
+                                <a href="">
+                                    <div>
+                                        <img class="product-listItem-img" src="./src/images/productos/Sweet_Treats.jpg" alt="Sweer Treats" sizes="(max-width: 767px) calc(50vw - 36px), (min-width: 768px) and (max-width: 1280px) calc(25vw - 64px), 284px" width="300" height="433">
+                                    </div>
+                                </a>
+                                <div class="add-favoriteButton">
+                                    <button class="z-button">
+                                        <img src="./src/icons/heart.svg" alt="Añadir a favoritos">
+                                    </button>
+                                </div>
+                                <div class="product-info">
+                                    <a href="">
+                                        <div>
+                                            <div class="product-infoName">Telas de Cocina</div>
+                                            <div class="product-infoReference">Sweer Treats</div>
+                                        </div>
+                                        <div>
+                                            <span class="product-infoPrice">11,50€/m</span>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="product-listItem">
+                            <div>
+                                <a href="">
+                                    <div>
+                                        <img class="product-listItem-img" src="./src/images/productos/Baguette_Francaise_Ivore.jpg" alt="Baguette Francaise Ivore" sizes="(max-width: 767px) calc(50vw - 36px), (min-width: 768px) and (max-width: 1280px) calc(25vw - 64px), 284px" width="300" height="433">
+                                    </div>
+                                </a>
+                                <div class="add-favoriteButton">
+                                    <button class="z-button">
+                                        <img src="./src/icons/heart.svg" alt="Añadir a favoritos">
+                                    </button>
+                                </div>
+                                <div class="product-info">
+                                    <a href="">
+                                        <div>
+                                            <div class="product-infoName">Cretona estampada</div>
+                                            <div class="product-infoReference">Baguette Francaise Ivore</div>
+                                        </div>
+                                        <div>
+                                            <span class="product-infoPrice">8,50€/m</span>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="product-listItem">
+                            <div>
+                                <a href="">
+                                    <div>
+                                        <img class="product-listItem-img" src="./src/images/productos/le_quilt_chataigne_4.jpg" alt="LeQuilt Chataigne 4" sizes="(max-width: 767px) calc(50vw - 36px), (min-width: 768px) and (max-width: 1280px) calc(25vw - 64px), 284px" width="300" height="433">
+                                    </div>
+                                </a>
+                                <div class="add-favoriteButton">
+                                    <button class="z-button">
+                                        <img src="./src/icons/heart.svg" alt="Añadir a favoritos">
+                                    </button>
+                                </div>
+                                <div class="product-info">
+                                    <a href="">
+                                        <div>
+                                            <div class="product-infoName">LeQuilt</div>
+                                            <div class="product-infoReference">Chataigne 4</div>
+                                        </div>
+                                        <div>
+                                            <span class="product-infoPrice">9,95€/m</span>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="product-listItem">
+                            <div>
+                                <a href="">
+                                    <div>
+                                        <img class="product-listItem-img" src="./src/images/productos/griotte_1.jpg" alt="LeQuilt Griotte 1" sizes="(max-width: 767px) calc(50vw - 36px), (min-width: 768px) and (max-width: 1280px) calc(25vw - 64px), 284px" width="300" height="433">
+                                    </div>
+                                </a>
+                                <div class="add-favoriteButton">
+                                    <button class="z-button">
+                                        <img src="./src/icons/heart.svg" alt="Añadir a favoritos">
+                                    </button>
+                                </div>
+                                <div class="product-info">
+                                    <a href="">
+                                        <div>
+                                            <div class="product-infoName">LeQuilt</div>
+                                            <div class="product-infoReference">Griotte 1</div>
+                                        </div>
+                                        <div>
+                                            <span class="product-infoPrice">9,95€/m</span>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="product-listItem">
+                            <div>
+                                <a href="">
+                                    <div>
+                                        <img class="product-listItem-img" src="./src/images/productos/watermelon.jpg" alt="Watermelon Delight" sizes="(max-width: 767px) calc(50vw - 36px), (min-width: 768px) and (max-width: 1280px) calc(25vw - 64px), 284px" width="300" height="433">
+                                    </div>
+                                </a>
+                                <div class="add-favoriteButton">
+                                    <button class="z-button">
+                                        <img src="./src/icons/heart.svg" alt="Añadir a favoritos">
+                                    </button>
+                                </div>
+                                <div class="product-info">
+                                    <a href="">
+                                        <div>
+                                            <div class="product-infoName">Telas de Cocina</div>
+                                            <div class="product-infoReference">Watermelon Delight</div>
+                                        </div>
+                                        <div>
+                                            <span class="product-infoPrice">9,95€/m</span>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="product-listItem">
+                            <div>
+                                <a href="">
+                                    <div>
+                                        <img class="product-listItem-img" src="./src/images/productos/Happy_Foods.jpg" alt="Happy Foods" sizes="(max-width: 767px) calc(50vw - 36px), (min-width: 768px) and (max-width: 1280px) calc(25vw - 64px), 284px" width="300" height="433">
+                                    </div>
+                                </a>
+                                <div class="add-favoriteButton">
+                                    <button class="z-button">
+                                        <img src="./src/icons/heart.svg" alt="Añadir a favoritos">
+                                    </button>
+                                </div>
+                                <div class="product-info">
+                                    <a href="">
+                                        <div>
+                                            <div class="product-infoName">Telas de Cocina</div>
+                                            <div class="product-infoReference">Happy Foods</div>
+                                        </div>
+                                        <div>
+                                            <span class="product-infoPrice">9,95€/m</span>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="product-listItem">
+                            <div>
+                                <a href="">
+                                    <div>
+                                        <img class="product-listItem-img" src="./src/images/productos/slice_tomatoe.jpg" alt="Tomato Slice" sizes="(max-width: 767px) calc(50vw - 36px), (min-width: 768px) and (max-width: 1280px) calc(25vw - 64px), 284px" width="300" height="433">
+                                    </div>
+                                </a>
+                                <div class="add-favoriteButton">
+                                    <button class="z-button">
+                                        <img src="./src/icons/heart.svg" alt="Añadir a favoritos">
+                                    </button>
+                                </div>
+                                <div class="product-info">
+                                    <a href="">
+                                        <div>
+                                            <div class="product-infoName">Telas de Cocina</div>
+                                            <div class="product-infoReference">Tomato Slice</div>
+                                        </div>
+                                        <div>
+                                            <span class="product-infoPrice">9,95€/m</span>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                    <div class="product-carousel">
+                        <button name="product-carousel-buttonLeft">
+                            <img src="./src/icons/rightrow.svg" alt="">
+                        </button>
+                        <button name="product-carousel-buttonLeft">
+                            <img src="./src/icons/rightrow.svg" alt="">
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </section>
         <footer></footer>
     </body>
     <script src="main.js"></script>
