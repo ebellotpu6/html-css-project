@@ -9,21 +9,35 @@ const footer_accordion = document.querySelectorAll(".footer-section");
 
 const product_carousels = document.querySelectorAll('.product-list');
 
+//Show sideBarMenu
 navbar_button.addEventListener("click", function(){
-    console.log("show sidebar menu");
     sideBarMenu.style = "transform: translateZ(0);";
 });
 
+//Hide sideBarMenu
 close_navbar_button.addEventListener("click", function(){
-    console.log("hide sidebar menu");
     sideBarMenu.style = "transform: translate3d(-100%, 0, 0);";
 });
 
+//Handler submenu (show on mouseover)
+function showSubmenu(category) {
+    navbar_categoryOverlayConatainer.classList.add("navbar_categoryOverlayConatainer-open");
+    for(const element of navbar_subMenu){
+        if (element.attributes.reference.value == category){
+            element.style = "display: grid;"
+            navbar_subMenuImage.style=`background-image: url(./src/images/categories/${category}.jpeg);`
+        }
+        else element.style = "display: none";
+    }
+}
+
+//Handler submenu (hide on mouseleave)
 navbar_category_container.addEventListener("mouseleave", function(){
-    console.log("hide submenu");
     navbar_categoryOverlayConatainer.classList.remove("navbar_categoryOverlayConatainer-open");
 });
 
+
+//Handler product carousel
 for (let i = 0; i < product_carousels.length; i++){
     let itemWidth = product_carousels[i].querySelector('.product-listItem').clientWidth;
     product_carousels[i].nextElementSibling.querySelector("button.product-carousel-buttonLeft").addEventListener('click', function(){
@@ -42,20 +56,10 @@ for (let i = 0; i < product_carousels.length; i++){
     }
 }
 
+//Handler footer sections
 for(let i = 0; i < footer_accordion.length; i++){
     footer_accordion[i].addEventListener("click", function(){
         this.classList.toggle("expanded");
     });
 }
 
-
-function showSubmenu(category) {
-    navbar_categoryOverlayConatainer.classList.add("navbar_categoryOverlayConatainer-open");
-    for(const element of navbar_subMenu){
-        if (element.attributes.reference.value == category){
-            element.style = "display: grid;"
-            navbar_subMenuImage.style=`background-image: url(./src/images/categories/${category}.jpeg);`
-        }
-        else element.style = "display: none";
-    }
-}
