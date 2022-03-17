@@ -5,6 +5,7 @@ const navbar_category_container = document.getElementById("navbar_category_conta
 const navbar_subMenu = document.querySelectorAll('.navbar-subMenu');
 const navbar_categoryOverlayConatainer = document.getElementById("navbar_categoryOverlayConatainer");
 const navbar_subMenuImage = document.getElementById("navbar_subMenuImage");
+const footer_accordion = document.querySelectorAll(".footer-section");
 
 const product_carousels = document.querySelectorAll('.product-list');
 
@@ -39,6 +40,12 @@ for (let i = 0; i < product_carousels.length; i++){
         if(product_carousels[i].scrollLeft == (product_carousels[i].scrollWidth - product_carousels[i].offsetWidth)) nextProductCarousel.classList.add('hide-content');
         else if(nextProductCarousel.classList.contains('hide-content')) nextProductCarousel.classList.remove('hide-content');
     }
+}
+
+for(let i = 0; i < footer_accordion.length; i++){
+    footer_accordion[i].addEventListener("click", function(){
+        this.classList.toggle("expanded");
+    });
 }
 
 

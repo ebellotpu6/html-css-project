@@ -103,7 +103,7 @@
                                 </li>
                             </ul>
 
-                            <div id="navbar_categoryOverlayConatainer" class="navbar_categoryOverlayConatainer">
+                            <div id="navbar_categoryOverlayConatainer" class="navbar_categoryOverlayConatainer" style="z-index: 999;">
                                 <div id="navbar_subCategoryContainer">
                                     <div>
                                         <div>
@@ -840,7 +840,6 @@
                     </div>
                 </div>
             </div>
-            <div class="navbar_categoryOverlayContainer_border"></div>
             <div id="navbar_sidePanel_container">
                 <div id="navbar_sidePanelHead">
                     <div></div>
@@ -969,243 +968,1188 @@
                 </div>
             </div>
         </header>
-        <section>
-            <div class="collection-section-container">
-                <div>
-                    <div class="collection-description-container">
-                        <div>
-                            <h2>Telas de cocina</h2>
-                            <h4>Recien llegados</h4>
-                            <div>
-                                <a href="">
-                                    <span class="navbar-link">
-                                        Ver más
-                                        <img src="./src/icons/rightrow.svg" alt="Ver más.">
-                                    </span>
-                                </a>
+        <main>
+            <section>
+                <div class="collection-section-container">
+                    <div>
+                        <div class="collection-description-container">
+                            <div class="collection-descriptionImg">
+                                <img src="./src/images/colecciones/decoracion_exteriores.jpeg" alt="">
                             </div>
-                        </div>
-                        <div>
-                            <img src="./src/images/colecciones/telas_cocina.jpg" alt="">
+                            <div class="collection-descriptionText">
+                                <h2>Decoración exteriores</h2>
+                                <h4>Encuentra tu tela para exteriores</h4>
+                                <div>
+                                    <a href="">
+                                        <span class="navbar-link">
+                                            Ver más
+                                            <img src="./src/icons/rightrow.svg" alt="Ver más.">
+                                        </span>
+                                    </a>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
-                
-                <div class="collection-products-container">
-                    <ul class="product-list">
-                        <li class="product-listItem">
+            </section>
+            <section>
+                <div class="collection-section-container">
+                    <div class="collection-description-container">
+                        <div class="collection-titleText">
+                            <div>
+                                <h2>Descubre las novedades</h2>
+                                <h4>Recien llegadas para ti</h4>
+                            </div>
                             <div>
                                 <a href="">
-                                    <div>
-                                        <img class="product-listItem-img" src="./src/images/productos/Legumes_1_112.jpg" alt="LeQuilt Legumes 1" sizes="(max-width: 767px) calc(50vw - 36px), (min-width: 768px) and (max-width: 1280px) calc(25vw - 64px), 284px" width="300" height="433">
-                                    </div>
+                                    <img src="./src/icons/rightrow.svg" alt="Ver más.">
                                 </a>
-                                <div class="add-favoriteButton">
-                                    <button class="z-button">
-                                        <img src="./src/icons/heart.svg" alt="Añadir a favoritos">
-                                    </button>
-                                </div>
-                                <div class="product-info">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="collection-products-container">
+                        <ul class="product-list">
+                            <li class="product-listItem">
+                                <div>
                                     <a href="">
                                         <div>
-                                            <div class="product-infoName">LeQuilt</div>
-                                            <div class="product-infoReference">Legumes 1</div>
+                                            <img class="product-listItem-img" src="./src/images/productos/Legumes_1_112.jpg" alt="LeQuilt Legumes 1" sizes="(max-width: 767px) calc(50vw - 36px), (min-width: 768px) and (max-width: 1280px) calc(25vw - 64px), 284px" width="300" height="433">
                                         </div>
+                                    </a>
+                                    <div class="add-favoriteButton">
+                                        <button class="z-button">
+                                            <img src="./src/icons/heart.svg" alt="Añadir a favoritos">
+                                        </button>
+                                    </div>
+                                    <div class="product-info">
+                                        <a href="">
+                                            <div>
+                                                <div class="product-infoName">LeQuilt</div>
+                                                <div class="product-infoReference">Legumes 1</div>
+                                            </div>
+                                            <div>
+                                                <span class="product-infoPrice">9,95€/m</span>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="product-listItem">
+                                <div>
+                                    <a href="">
                                         <div>
-                                            <span class="product-infoPrice">9,95€/m</span>
+                                            <img class="product-listItem-img" src="./src/images/productos/Sweet_Treats.jpg" alt="Sweer Treats" sizes="(max-width: 767px) calc(50vw - 36px), (min-width: 768px) and (max-width: 1280px) calc(25vw - 64px), 284px" width="300" height="433">
                                         </div>
+                                    </a>
+                                    <div class="add-favoriteButton">
+                                        <button class="z-button">
+                                            <img src="./src/icons/heart.svg" alt="Añadir a favoritos">
+                                        </button>
+                                    </div>
+                                    <div class="product-info">
+                                        <a href="">
+                                            <div>
+                                                <div class="product-infoName">Telas de Cocina</div>
+                                                <div class="product-infoReference">Sweer Treats</div>
+                                            </div>
+                                            <div>
+                                                <span class="product-infoPrice">11,50€/m</span>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="product-listItem">
+                                <div>
+                                    <a href="">
+                                        <div>
+                                            <img class="product-listItem-img" src="./src/images/productos/Baguette_Francaise_Ivore.jpg" alt="Baguette Francaise Ivore" sizes="(max-width: 767px) calc(50vw - 36px), (min-width: 768px) and (max-width: 1280px) calc(25vw - 64px), 284px" width="300" height="433">
+                                        </div>
+                                    </a>
+                                    <div class="add-favoriteButton">
+                                        <button class="z-button">
+                                            <img src="./src/icons/heart.svg" alt="Añadir a favoritos">
+                                        </button>
+                                    </div>
+                                    <div class="product-info">
+                                        <a href="">
+                                            <div>
+                                                <div class="product-infoName">Cretona estampada</div>
+                                                <div class="product-infoReference">Baguette Francaise Ivore</div>
+                                            </div>
+                                            <div>
+                                                <span class="product-infoPrice">8,50€/m</span>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="product-listItem">
+                                <div>
+                                    <a href="">
+                                        <div>
+                                            <img class="product-listItem-img" src="./src/images/productos/le_quilt_chataigne_4.jpg" alt="LeQuilt Chataigne 4" sizes="(max-width: 767px) calc(50vw - 36px), (min-width: 768px) and (max-width: 1280px) calc(25vw - 64px), 284px" width="300" height="433">
+                                        </div>
+                                    </a>
+                                    <div class="add-favoriteButton">
+                                        <button class="z-button">
+                                            <img src="./src/icons/heart.svg" alt="Añadir a favoritos">
+                                        </button>
+                                    </div>
+                                    <div class="product-info">
+                                        <a href="">
+                                            <div>
+                                                <div class="product-infoName">LeQuilt</div>
+                                                <div class="product-infoReference">Chataigne 4</div>
+                                            </div>
+                                            <div>
+                                                <span class="product-infoPrice">9,95€/m</span>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="product-listItem">
+                                <div>
+                                    <a href="">
+                                        <div>
+                                            <img class="product-listItem-img" src="./src/images/productos/griotte_1.jpg" alt="LeQuilt Griotte 1" sizes="(max-width: 767px) calc(50vw - 36px), (min-width: 768px) and (max-width: 1280px) calc(25vw - 64px), 284px" width="300" height="433">
+                                        </div>
+                                    </a>
+                                    <div class="add-favoriteButton">
+                                        <button class="z-button">
+                                            <img src="./src/icons/heart.svg" alt="Añadir a favoritos">
+                                        </button>
+                                    </div>
+                                    <div class="product-info">
+                                        <a href="">
+                                            <div>
+                                                <div class="product-infoName">LeQuilt</div>
+                                                <div class="product-infoReference">Griotte 1</div>
+                                            </div>
+                                            <div>
+                                                <span class="product-infoPrice">9,95€/m</span>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="product-listItem">
+                                <div>
+                                    <a href="">
+                                        <div>
+                                            <img class="product-listItem-img" src="./src/images/productos/watermelon.jpg" alt="Watermelon Delight" sizes="(max-width: 767px) calc(50vw - 36px), (min-width: 768px) and (max-width: 1280px) calc(25vw - 64px), 284px" width="300" height="433">
+                                        </div>
+                                    </a>
+                                    <div class="add-favoriteButton">
+                                        <button class="z-button">
+                                            <img src="./src/icons/heart.svg" alt="Añadir a favoritos">
+                                        </button>
+                                    </div>
+                                    <div class="product-info">
+                                        <a href="">
+                                            <div>
+                                                <div class="product-infoName">Telas de Cocina</div>
+                                                <div class="product-infoReference">Watermelon Delight</div>
+                                            </div>
+                                            <div>
+                                                <span class="product-infoPrice">9,95€/m</span>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="product-listItem">
+                                <div>
+                                    <a href="">
+                                        <div>
+                                            <img class="product-listItem-img" src="./src/images/productos/Happy_Foods.jpg" alt="Happy Foods" sizes="(max-width: 767px) calc(50vw - 36px), (min-width: 768px) and (max-width: 1280px) calc(25vw - 64px), 284px" width="300" height="433">
+                                        </div>
+                                    </a>
+                                    <div class="add-favoriteButton">
+                                        <button class="z-button">
+                                            <img src="./src/icons/heart.svg" alt="Añadir a favoritos">
+                                        </button>
+                                    </div>
+                                    <div class="product-info">
+                                        <a href="">
+                                            <div>
+                                                <div class="product-infoName">Telas de Cocina</div>
+                                                <div class="product-infoReference">Happy Foods</div>
+                                            </div>
+                                            <div>
+                                                <span class="product-infoPrice">9,95€/m</span>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="product-listItem">
+                                <div>
+                                    <a href="">
+                                        <div>
+                                            <img class="product-listItem-img" src="./src/images/productos/slice_tomatoe.jpg" alt="Tomato Slice" sizes="(max-width: 767px) calc(50vw - 36px), (min-width: 768px) and (max-width: 1280px) calc(25vw - 64px), 284px" width="300" height="433">
+                                        </div>
+                                    </a>
+                                    <div class="add-favoriteButton">
+                                        <button class="z-button">
+                                            <img src="./src/icons/heart.svg" alt="Añadir a favoritos">
+                                        </button>
+                                    </div>
+                                    <div class="product-info">
+                                        <a href="">
+                                            <div>
+                                                <div class="product-infoName">Telas de Cocina</div>
+                                                <div class="product-infoReference">Tomato Slice</div>
+                                            </div>
+                                            <div>
+                                                <span class="product-infoPrice">9,95€/m</span>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                        <div class="product-carousel">
+                            <button class="z-button product-carousel-buttonLeft hide-content">
+                                <img src="./src/icons/leftrow.svg" alt="">
+                            </button>
+                            <button class="z-button product-carousel-buttonRight">
+                                <img src="./src/icons/rightrow.svg" alt="">
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section>
+                <div class="collection-section-container">
+                    <div>
+                        <div class="collection-description-container">
+                            <div class="collection-descriptionText">
+                                <h2>Telas de cocina</h2>
+                                <h4>Recien llegados</h4>
+                                <div>
+                                    <a href="">
+                                        <span class="navbar-link">
+                                            Ver más
+                                            <img src="./src/icons/rightrow.svg" alt="Ver más.">
+                                        </span>
                                     </a>
                                 </div>
                             </div>
-                        </li>
-                        <li class="product-listItem">
-                            <div>
-                                <a href="">
-                                    <div>
-                                        <img class="product-listItem-img" src="./src/images/productos/Sweet_Treats.jpg" alt="Sweer Treats" sizes="(max-width: 767px) calc(50vw - 36px), (min-width: 768px) and (max-width: 1280px) calc(25vw - 64px), 284px" width="300" height="433">
-                                    </div>
-                                </a>
-                                <div class="add-favoriteButton">
-                                    <button class="z-button">
-                                        <img src="./src/icons/heart.svg" alt="Añadir a favoritos">
-                                    </button>
-                                </div>
-                                <div class="product-info">
+                            <div class="collection-descriptionImg">
+                                <img src="./src/images/colecciones/telas_cocina.jpg" alt="">
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="collection-products-container">
+                        <ul class="product-list">
+                            <li class="product-listItem">
+                                <div>
                                     <a href="">
                                         <div>
-                                            <div class="product-infoName">Telas de Cocina</div>
-                                            <div class="product-infoReference">Sweer Treats</div>
+                                            <img class="product-listItem-img" src="./src/images/productos/Legumes_1_112.jpg" alt="LeQuilt Legumes 1" sizes="(max-width: 767px) calc(50vw - 36px), (min-width: 768px) and (max-width: 1280px) calc(25vw - 64px), 284px" width="300" height="433">
                                         </div>
+                                    </a>
+                                    <div class="add-favoriteButton">
+                                        <button class="z-button">
+                                            <img src="./src/icons/heart.svg" alt="Añadir a favoritos">
+                                        </button>
+                                    </div>
+                                    <div class="product-info">
+                                        <a href="">
+                                            <div>
+                                                <div class="product-infoName">LeQuilt</div>
+                                                <div class="product-infoReference">Legumes 1</div>
+                                            </div>
+                                            <div>
+                                                <span class="product-infoPrice">9,95€/m</span>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="product-listItem">
+                                <div>
+                                    <a href="">
                                         <div>
-                                            <span class="product-infoPrice">11,50€/m</span>
+                                            <img class="product-listItem-img" src="./src/images/productos/Sweet_Treats.jpg" alt="Sweer Treats" sizes="(max-width: 767px) calc(50vw - 36px), (min-width: 768px) and (max-width: 1280px) calc(25vw - 64px), 284px" width="300" height="433">
                                         </div>
+                                    </a>
+                                    <div class="add-favoriteButton">
+                                        <button class="z-button">
+                                            <img src="./src/icons/heart.svg" alt="Añadir a favoritos">
+                                        </button>
+                                    </div>
+                                    <div class="product-info">
+                                        <a href="">
+                                            <div>
+                                                <div class="product-infoName">Telas de Cocina</div>
+                                                <div class="product-infoReference">Sweer Treats</div>
+                                            </div>
+                                            <div>
+                                                <span class="product-infoPrice">11,50€/m</span>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="product-listItem">
+                                <div>
+                                    <a href="">
+                                        <div>
+                                            <img class="product-listItem-img" src="./src/images/productos/Baguette_Francaise_Ivore.jpg" alt="Baguette Francaise Ivore" sizes="(max-width: 767px) calc(50vw - 36px), (min-width: 768px) and (max-width: 1280px) calc(25vw - 64px), 284px" width="300" height="433">
+                                        </div>
+                                    </a>
+                                    <div class="add-favoriteButton">
+                                        <button class="z-button">
+                                            <img src="./src/icons/heart.svg" alt="Añadir a favoritos">
+                                        </button>
+                                    </div>
+                                    <div class="product-info">
+                                        <a href="">
+                                            <div>
+                                                <div class="product-infoName">Cretona estampada</div>
+                                                <div class="product-infoReference">Baguette Francaise Ivore</div>
+                                            </div>
+                                            <div>
+                                                <span class="product-infoPrice">8,50€/m</span>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="product-listItem">
+                                <div>
+                                    <a href="">
+                                        <div>
+                                            <img class="product-listItem-img" src="./src/images/productos/le_quilt_chataigne_4.jpg" alt="LeQuilt Chataigne 4" sizes="(max-width: 767px) calc(50vw - 36px), (min-width: 768px) and (max-width: 1280px) calc(25vw - 64px), 284px" width="300" height="433">
+                                        </div>
+                                    </a>
+                                    <div class="add-favoriteButton">
+                                        <button class="z-button">
+                                            <img src="./src/icons/heart.svg" alt="Añadir a favoritos">
+                                        </button>
+                                    </div>
+                                    <div class="product-info">
+                                        <a href="">
+                                            <div>
+                                                <div class="product-infoName">LeQuilt</div>
+                                                <div class="product-infoReference">Chataigne 4</div>
+                                            </div>
+                                            <div>
+                                                <span class="product-infoPrice">9,95€/m</span>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="product-listItem">
+                                <div>
+                                    <a href="">
+                                        <div>
+                                            <img class="product-listItem-img" src="./src/images/productos/griotte_1.jpg" alt="LeQuilt Griotte 1" sizes="(max-width: 767px) calc(50vw - 36px), (min-width: 768px) and (max-width: 1280px) calc(25vw - 64px), 284px" width="300" height="433">
+                                        </div>
+                                    </a>
+                                    <div class="add-favoriteButton">
+                                        <button class="z-button">
+                                            <img src="./src/icons/heart.svg" alt="Añadir a favoritos">
+                                        </button>
+                                    </div>
+                                    <div class="product-info">
+                                        <a href="">
+                                            <div>
+                                                <div class="product-infoName">LeQuilt</div>
+                                                <div class="product-infoReference">Griotte 1</div>
+                                            </div>
+                                            <div>
+                                                <span class="product-infoPrice">9,95€/m</span>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="product-listItem">
+                                <div>
+                                    <a href="">
+                                        <div>
+                                            <img class="product-listItem-img" src="./src/images/productos/watermelon.jpg" alt="Watermelon Delight" sizes="(max-width: 767px) calc(50vw - 36px), (min-width: 768px) and (max-width: 1280px) calc(25vw - 64px), 284px" width="300" height="433">
+                                        </div>
+                                    </a>
+                                    <div class="add-favoriteButton">
+                                        <button class="z-button">
+                                            <img src="./src/icons/heart.svg" alt="Añadir a favoritos">
+                                        </button>
+                                    </div>
+                                    <div class="product-info">
+                                        <a href="">
+                                            <div>
+                                                <div class="product-infoName">Telas de Cocina</div>
+                                                <div class="product-infoReference">Watermelon Delight</div>
+                                            </div>
+                                            <div>
+                                                <span class="product-infoPrice">9,95€/m</span>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="product-listItem">
+                                <div>
+                                    <a href="">
+                                        <div>
+                                            <img class="product-listItem-img" src="./src/images/productos/Happy_Foods.jpg" alt="Happy Foods" sizes="(max-width: 767px) calc(50vw - 36px), (min-width: 768px) and (max-width: 1280px) calc(25vw - 64px), 284px" width="300" height="433">
+                                        </div>
+                                    </a>
+                                    <div class="add-favoriteButton">
+                                        <button class="z-button">
+                                            <img src="./src/icons/heart.svg" alt="Añadir a favoritos">
+                                        </button>
+                                    </div>
+                                    <div class="product-info">
+                                        <a href="">
+                                            <div>
+                                                <div class="product-infoName">Telas de Cocina</div>
+                                                <div class="product-infoReference">Happy Foods</div>
+                                            </div>
+                                            <div>
+                                                <span class="product-infoPrice">9,95€/m</span>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="product-listItem">
+                                <div>
+                                    <a href="">
+                                        <div>
+                                            <img class="product-listItem-img" src="./src/images/productos/slice_tomatoe.jpg" alt="Tomato Slice" sizes="(max-width: 767px) calc(50vw - 36px), (min-width: 768px) and (max-width: 1280px) calc(25vw - 64px), 284px" width="300" height="433">
+                                        </div>
+                                    </a>
+                                    <div class="add-favoriteButton">
+                                        <button class="z-button">
+                                            <img src="./src/icons/heart.svg" alt="Añadir a favoritos">
+                                        </button>
+                                    </div>
+                                    <div class="product-info">
+                                        <a href="">
+                                            <div>
+                                                <div class="product-infoName">Telas de Cocina</div>
+                                                <div class="product-infoReference">Tomato Slice</div>
+                                            </div>
+                                            <div>
+                                                <span class="product-infoPrice">9,95€/m</span>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                        <div class="product-carousel">
+                            <button class="z-button product-carousel-buttonLeft hide-content">
+                                <img src="./src/icons/leftrow.svg" alt="">
+                            </button>
+                            <button class="z-button product-carousel-buttonRight">
+                                <img src="./src/icons/rightrow.svg" alt="">
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section>
+                <div class="collection-section-container">
+                    <div class="collection-description-container">
+                        <div class="collection-titleText">
+                            <div>
+                                <h2>Tus telas favoritas</h2>
+                                <h4>Para ti</h4>
+                            </div>
+                            <div>
+                                <a href="">
+                                    <img src="./src/icons/rightrow.svg" alt="Ver más.">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="collection-products-container">
+                        <ul class="product-list">
+                            <li class="product-listItem">
+                                <div>
+                                    <a href="">
+                                        <div>
+                                            <img class="product-listItem-img" src="./src/images/productos/Pictures_213.jpeg" alt="Pokemon Ash y Pickachu" sizes="(max-width: 767px) calc(50vw - 36px), (min-width: 768px) and (max-width: 1280px) calc(25vw - 64px), 284px" width="300" height="433">
+                                        </div>
+                                    </a>
+                                    <div class="add-favoriteButton">
+                                        <button class="z-button">
+                                            <img src="./src/icons/heart.svg" alt="Añadir a favoritos">
+                                        </button>
+                                    </div>
+                                    <div class="product-info">
+                                        <a href="">
+                                            <div>
+                                                <div class="product-infoName">Pictures</div>
+                                                <div class="product-infoReference">213 - Pokemon Ash y Pickachu</div>
+                                            </div>
+                                            <div>
+                                                <span class="product-infoPrice">10,25€/m</span>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="product-listItem">
+                                <div>
+                                    <a href="">
+                                        <div>
+                                            <img class="product-listItem-img" src="./src/images/productos/Pictures_228.jpeg" alt="Mario Bros (Mario Bros.)" sizes="(max-width: 767px) calc(50vw - 36px), (min-width: 768px) and (max-width: 1280px) calc(25vw - 64px), 284px" width="300" height="433">
+                                        </div>
+                                    </a>
+                                    <div class="add-favoriteButton">
+                                        <button class="z-button">
+                                            <img src="./src/icons/heart.svg" alt="Añadir a favoritos">
+                                        </button>
+                                    </div>
+                                    <div class="product-info">
+                                        <a href="">
+                                            <div>
+                                                <div class="product-infoName">Pictures</div>
+                                                <div class="product-infoReference">228 - Mario Bros</div>
+                                            </div>
+                                            <div>
+                                                <span class="product-infoPrice">10,25€/m</span>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="product-listItem">
+                                <div>
+                                    <a href="">
+                                        <div>
+                                            <img class="product-listItem-img" src="./src/images/productos/Pictures_232.jpeg" alt="Minecraft" sizes="(max-width: 767px) calc(50vw - 36px), (min-width: 768px) and (max-width: 1280px) calc(25vw - 64px), 284px" width="300" height="433">
+                                        </div>
+                                    </a>
+                                    <div class="add-favoriteButton">
+                                        <button class="z-button">
+                                            <img src="./src/icons/heart.svg" alt="Añadir a favoritos">
+                                        </button>
+                                    </div>
+                                    <div class="product-info">
+                                        <a href="">
+                                            <div>
+                                                <div class="product-infoName">Pictures</div>
+                                                <div class="product-infoReference">232 - Minecraft</div>
+                                            </div>
+                                            <div>
+                                                <span class="product-infoPrice">10,25€/m</span>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="product-listItem">
+                                <div>
+                                    <a href="">
+                                        <div>
+                                            <img class="product-listItem-img" src="./src/images/productos/Pictures_236.jpeg" alt="DragonBall" sizes="(max-width: 767px) calc(50vw - 36px), (min-width: 768px) and (max-width: 1280px) calc(25vw - 64px), 284px" width="300" height="433">
+                                        </div>
+                                    </a>
+                                    <div class="add-favoriteButton">
+                                        <button class="z-button">
+                                            <img src="./src/icons/heart.svg" alt="Añadir a favoritos">
+                                        </button>
+                                    </div>
+                                    <div class="product-info">
+                                        <a href="">
+                                            <div>
+                                                <div class="product-infoName">Pictures</div>
+                                                <div class="product-infoReference">236 - DragonBall</div>
+                                            </div>
+                                            <div>
+                                                <span class="product-infoPrice">10,25€/m</span>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="product-listItem">
+                                <div>
+                                    <a href="">
+                                        <div>
+                                            <img class="product-listItem-img" src="./src/images/productos/defenders_earth_m.jpeg" alt="Marvel The Defenders" sizes="(max-width: 767px) calc(50vw - 36px), (min-width: 768px) and (max-width: 1280px) calc(25vw - 64px), 284px" width="300" height="433">
+                                        </div>
+                                    </a>
+                                    <div class="add-favoriteButton">
+                                        <button class="z-button">
+                                            <img src="./src/icons/heart.svg" alt="Añadir a favoritos">
+                                        </button>
+                                    </div>
+                                    <div class="product-info">
+                                        <a href="">
+                                            <div>
+                                                <div class="product-infoName">Marvel</div>
+                                                <div class="product-infoReference">Los Defensores</div>
+                                            </div>
+                                            <div>
+                                                <span class="product-infoPrice">10,25€/m</span>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="product-listItem">
+                                <div>
+                                    <a href="">
+                                        <div>
+                                            <img class="product-listItem-img" src="./src/images/productos/broom.600_m.jpg" alt="Harry Potter" sizes="(max-width: 767px) calc(50vw - 36px), (min-width: 768px) and (max-width: 1280px) calc(25vw - 64px), 284px" width="300" height="433">
+                                        </div>
+                                    </a>
+                                    <div class="add-favoriteButton">
+                                        <button class="z-button">
+                                            <img src="./src/icons/heart.svg" alt="Añadir a favoritos">
+                                        </button>
+                                    </div>
+                                    <div class="product-info">
+                                        <a href="">
+                                            <div>
+                                                <div class="product-infoName">Pictures</div>
+                                                <div class="product-infoReference">251 - Harry Potter</div>
+                                            </div>
+                                            <div>
+                                                <span class="product-infoPrice">10,25€/m</span>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                        <div class="product-carousel">
+                            <button class="z-button product-carousel-buttonLeft hide-content">
+                                <img src="./src/icons/leftrow.svg" alt="">
+                            </button>
+                            <button class="z-button product-carousel-buttonRight">
+                                <img src="./src/icons/rightrow.svg" alt="">
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section>
+                <div class="collection-section-container">
+                    <div>
+                        <div class="collection-description-container">
+                            <div class="collection-descriptionText">
+                                <h2>Telas de Waffle</h2>
+                                <h4>Todos los colores</h4>
+                                <div>
+                                    <a href="">
+                                        <span class="navbar-link">
+                                            Ver más
+                                            <img src="./src/icons/rightrow.svg" alt="Ver más.">
+                                        </span>
                                     </a>
                                 </div>
                             </div>
-                        </li>
-                        <li class="product-listItem">
-                            <div>
-                                <a href="">
-                                    <div>
-                                        <img class="product-listItem-img" src="./src/images/productos/Baguette_Francaise_Ivore.jpg" alt="Baguette Francaise Ivore" sizes="(max-width: 767px) calc(50vw - 36px), (min-width: 768px) and (max-width: 1280px) calc(25vw - 64px), 284px" width="300" height="433">
-                                    </div>
-                                </a>
-                                <div class="add-favoriteButton">
-                                    <button class="z-button">
-                                        <img src="./src/icons/heart.svg" alt="Añadir a favoritos">
-                                    </button>
-                                </div>
-                                <div class="product-info">
+                            <div class="collection-descriptionImg">
+                                <img src="./src/images/colecciones/telas_waffle.jpeg" alt="Telas de Waffle">
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="collection-products-container">
+                        <ul class="product-list">
+                            <li class="product-listItem">
+                                <div>
                                     <a href="">
                                         <div>
-                                            <div class="product-infoName">Cretona estampada</div>
-                                            <div class="product-infoReference">Baguette Francaise Ivore</div>
-                                        </div>
-                                        <div>
-                                            <span class="product-infoPrice">8,50€/m</span>
+                                            <img class="product-listItem-img" src="./src/images/productos/waffle_blanco.jpeg" alt="Waffle Blanco" sizes="(max-width: 767px) calc(50vw - 36px), (min-width: 768px) and (max-width: 1280px) calc(25vw - 64px), 284px" width="300" height="433">
                                         </div>
                                     </a>
-                                </div>
-                            </div>
-                        </li>
-                        <li class="product-listItem">
-                            <div>
-                                <a href="">
-                                    <div>
-                                        <img class="product-listItem-img" src="./src/images/productos/le_quilt_chataigne_4.jpg" alt="LeQuilt Chataigne 4" sizes="(max-width: 767px) calc(50vw - 36px), (min-width: 768px) and (max-width: 1280px) calc(25vw - 64px), 284px" width="300" height="433">
+                                    <div class="add-favoriteButton">
+                                        <button class="z-button">
+                                            <img src="./src/icons/heart.svg" alt="Añadir a favoritos">
+                                        </button>
                                     </div>
-                                </a>
-                                <div class="add-favoriteButton">
-                                    <button class="z-button">
-                                        <img src="./src/icons/heart.svg" alt="Añadir a favoritos">
-                                    </button>
+                                    <div class="product-info">
+                                        <a href="">
+                                            <div>
+                                                <div class="product-infoName">Waffle</div>
+                                                <div class="product-infoReference">RS0228-050 Blanco</div>
+                                            </div>
+                                            <div>
+                                                <span class="product-infoPrice">9,80€/m</span>
+                                            </div>
+                                        </a>
+                                    </div>
                                 </div>
-                                <div class="product-info">
+                            </li>
+                            <li class="product-listItem">
+                                <div>
                                     <a href="">
                                         <div>
-                                            <div class="product-infoName">LeQuilt</div>
-                                            <div class="product-infoReference">Chataigne 4</div>
-                                        </div>
-                                        <div>
-                                            <span class="product-infoPrice">9,95€/m</span>
+                                            <img class="product-listItem-img" src="./src/images/productos/waffle_salmon.jpeg" alt="Waffle Salmon" sizes="(max-width: 767px) calc(50vw - 36px), (min-width: 768px) and (max-width: 1280px) calc(25vw - 64px), 284px" width="300" height="433">
                                         </div>
                                     </a>
-                                </div>
-                            </div>
-                        </li>
-                        <li class="product-listItem">
-                            <div>
-                                <a href="">
-                                    <div>
-                                        <img class="product-listItem-img" src="./src/images/productos/griotte_1.jpg" alt="LeQuilt Griotte 1" sizes="(max-width: 767px) calc(50vw - 36px), (min-width: 768px) and (max-width: 1280px) calc(25vw - 64px), 284px" width="300" height="433">
+                                    <div class="add-favoriteButton">
+                                        <button class="z-button">
+                                            <img src="./src/icons/heart.svg" alt="Añadir a favoritos">
+                                        </button>
                                     </div>
-                                </a>
-                                <div class="add-favoriteButton">
-                                    <button class="z-button">
-                                        <img src="./src/icons/heart.svg" alt="Añadir a favoritos">
-                                    </button>
+                                    <div class="product-info">
+                                        <a href="">
+                                            <div>
+                                                <div class="product-infoName">Waffle</div>
+                                                <div class="product-infoReference">RS0228-033 Salmon</div>
+                                            </div>
+                                            <div>
+                                                <span class="product-infoPrice">9,80€/m</span>
+                                            </div>
+                                        </a>
+                                    </div>
                                 </div>
-                                <div class="product-info">
+                            </li>
+                            <li class="product-listItem">
+                                <div>
                                     <a href="">
                                         <div>
-                                            <div class="product-infoName">LeQuilt</div>
-                                            <div class="product-infoReference">Griotte 1</div>
-                                        </div>
-                                        <div>
-                                            <span class="product-infoPrice">9,95€/m</span>
+                                            <img class="product-listItem-img" src="./src/images/productos/waffle_rosa.jpeg" alt="Waffle Rosa" sizes="(max-width: 767px) calc(50vw - 36px), (min-width: 768px) and (max-width: 1280px) calc(25vw - 64px), 284px" width="300" height="433">
                                         </div>
                                     </a>
-                                </div>
-                            </div>
-                        </li>
-                        <li class="product-listItem">
-                            <div>
-                                <a href="">
-                                    <div>
-                                        <img class="product-listItem-img" src="./src/images/productos/watermelon.jpg" alt="Watermelon Delight" sizes="(max-width: 767px) calc(50vw - 36px), (min-width: 768px) and (max-width: 1280px) calc(25vw - 64px), 284px" width="300" height="433">
+                                    <div class="add-favoriteButton">
+                                        <button class="z-button">
+                                            <img src="./src/icons/heart.svg" alt="Añadir a favoritos">
+                                        </button>
                                     </div>
-                                </a>
-                                <div class="add-favoriteButton">
-                                    <button class="z-button">
-                                        <img src="./src/icons/heart.svg" alt="Añadir a favoritos">
-                                    </button>
+                                    <div class="product-info">
+                                        <a href="">
+                                            <div>
+                                                <div class="product-infoName">Waffle</div>
+                                                <div class="product-infoReference">RS0228-011 Rosa</div>
+                                            </div>
+                                            <div>
+                                                <span class="product-infoPrice">9,80€/m</span>
+                                            </div>
+                                        </a>
+                                    </div>
                                 </div>
-                                <div class="product-info">
+                            </li>
+                            <li class="product-listItem">
+                                <div>
                                     <a href="">
                                         <div>
-                                            <div class="product-infoName">Telas de Cocina</div>
-                                            <div class="product-infoReference">Watermelon Delight</div>
-                                        </div>
-                                        <div>
-                                            <span class="product-infoPrice">9,95€/m</span>
+                                            <img class="product-listItem-img" src="./src/images/productos/waffle_lila.jpeg" alt="Waffle Lila" sizes="(max-width: 767px) calc(50vw - 36px), (min-width: 768px) and (max-width: 1280px) calc(25vw - 64px), 284px" width="300" height="433">
                                         </div>
                                     </a>
-                                </div>
-                            </div>
-                        </li>
-                        <li class="product-listItem">
-                            <div>
-                                <a href="">
-                                    <div>
-                                        <img class="product-listItem-img" src="./src/images/productos/Happy_Foods.jpg" alt="Happy Foods" sizes="(max-width: 767px) calc(50vw - 36px), (min-width: 768px) and (max-width: 1280px) calc(25vw - 64px), 284px" width="300" height="433">
+                                    <div class="add-favoriteButton">
+                                        <button class="z-button">
+                                            <img src="./src/icons/heart.svg" alt="Añadir a favoritos">
+                                        </button>
                                     </div>
-                                </a>
-                                <div class="add-favoriteButton">
-                                    <button class="z-button">
-                                        <img src="./src/icons/heart.svg" alt="Añadir a favoritos">
-                                    </button>
+                                    <div class="product-info">
+                                        <a href="">
+                                            <div>
+                                                <div class="product-infoName">Waffle</div>
+                                                <div class="product-infoReference">RS0228-047 Lila</div>
+                                            </div>
+                                            <div>
+                                                <span class="product-infoPrice">9,80€/m</span>
+                                            </div>
+                                        </a>
+                                    </div>
                                 </div>
-                                <div class="product-info">
+                            </li>
+                            <li class="product-listItem">
+                                <div>
                                     <a href="">
                                         <div>
-                                            <div class="product-infoName">Telas de Cocina</div>
-                                            <div class="product-infoReference">Happy Foods</div>
-                                        </div>
-                                        <div>
-                                            <span class="product-infoPrice">9,95€/m</span>
+                                            <img class="product-listItem-img" src="./src/images/productos/waffle_dusty-blue.jpeg" alt="Waffle Dusty Blue" sizes="(max-width: 767px) calc(50vw - 36px), (min-width: 768px) and (max-width: 1280px) calc(25vw - 64px), 284px" width="300" height="433">
                                         </div>
                                     </a>
-                                </div>
-                            </div>
-                        </li>
-                        <li class="product-listItem">
-                            <div>
-                                <a href="">
-                                    <div>
-                                        <img class="product-listItem-img" src="./src/images/productos/slice_tomatoe.jpg" alt="Tomato Slice" sizes="(max-width: 767px) calc(50vw - 36px), (min-width: 768px) and (max-width: 1280px) calc(25vw - 64px), 284px" width="300" height="433">
+                                    <div class="add-favoriteButton">
+                                        <button class="z-button">
+                                            <img src="./src/icons/heart.svg" alt="Añadir a favoritos">
+                                        </button>
                                     </div>
-                                </a>
-                                <div class="add-favoriteButton">
-                                    <button class="z-button">
-                                        <img src="./src/icons/heart.svg" alt="Añadir a favoritos">
-                                    </button>
+                                    <div class="product-info">
+                                        <a href="">
+                                            <div>
+                                                <div class="product-infoName">Waffle</div>
+                                                <div class="product-infoReference">RS0228-004 Azul Polvoriento</div>
+                                            </div>
+                                            <div>
+                                                <span class="product-infoPrice">9,80€/m</span>
+                                            </div>
+                                        </a>
+                                    </div>
                                 </div>
-                                <div class="product-info">
+                            </li>
+                            <li class="product-listItem">
+                                <div>
                                     <a href="">
                                         <div>
-                                            <div class="product-infoName">Telas de Cocina</div>
-                                            <div class="product-infoReference">Tomato Slice</div>
-                                        </div>
-                                        <div>
-                                            <span class="product-infoPrice">9,95€/m</span>
+                                            <img class="product-listItem-img" src="./src/images/productos/waffle_blue.jpeg" alt="Waffle Azul" sizes="(max-width: 767px) calc(50vw - 36px), (min-width: 768px) and (max-width: 1280px) calc(25vw - 64px), 284px" width="300" height="433">
                                         </div>
                                     </a>
+                                    <div class="add-favoriteButton">
+                                        <button class="z-button">
+                                            <img src="./src/icons/heart.svg" alt="Añadir a favoritos">
+                                        </button>
+                                    </div>
+                                    <div class="product-info">
+                                        <a href="">
+                                            <div>
+                                                <div class="product-infoName">Waffle</div>
+                                                <div class="product-infoReference">RS0228-002 Azul</div>
+                                            </div>
+                                            <div>
+                                                <span class="product-infoPrice">9,80€/m</span>
+                                            </div>
+                                        </a>
+                                    </div>
                                 </div>
+                            </li>
+                            <li class="product-listItem">
+                                <div>
+                                    <a href="">
+                                        <div>
+                                            <img class="product-listItem-img" src="./src/images/productos/waffle_turquoise.jpeg" alt="Waffle Turquoise" sizes="(max-width: 767px) calc(50vw - 36px), (min-width: 768px) and (max-width: 1280px) calc(25vw - 64px), 284px" width="300" height="433">
+                                        </div>
+                                    </a>
+                                    <div class="add-favoriteButton">
+                                        <button class="z-button">
+                                            <img src="./src/icons/heart.svg" alt="Añadir a favoritos">
+                                        </button>
+                                    </div>
+                                    <div class="product-info">
+                                        <a href="">
+                                            <div>
+                                                <div class="product-infoName">Waffle</div>
+                                                <div class="product-infoReference">RS0228-021 Turquesa</div>
+                                            </div>
+                                            <div>
+                                                <span class="product-infoPrice">9,80€/m</span>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="product-listItem">
+                                <div>
+                                    <a href="">
+                                        <div>
+                                            <img class="product-listItem-img" src="./src/images/productos/waffle_adriatic.jpeg" alt="Waffle Adriatic" sizes="(max-width: 767px) calc(50vw - 36px), (min-width: 768px) and (max-width: 1280px) calc(25vw - 64px), 284px" width="300" height="433">
+                                        </div>
+                                    </a>
+                                    <div class="add-favoriteButton">
+                                        <button class="z-button">
+                                            <img src="./src/icons/heart.svg" alt="Añadir a favoritos">
+                                        </button>
+                                    </div>
+                                    <div class="product-info">
+                                        <a href="">
+                                            <div>
+                                                <div class="product-infoName">Waffle</div>
+                                                <div class="product-infoReference">RS0228-005 Adriatic</div>
+                                            </div>
+                                            <div>
+                                                <span class="product-infoPrice">9,80€/m</span>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="product-listItem">
+                                <div>
+                                    <a href="">
+                                        <div>
+                                            <img class="product-listItem-img" src="./src/images/productos/waffle_dark-grey.jpeg" alt="Waffle Gris oscuro" sizes="(max-width: 767px) calc(50vw - 36px), (min-width: 768px) and (max-width: 1280px) calc(25vw - 64px), 284px" width="300" height="433">
+                                        </div>
+                                    </a>
+                                    <div class="add-favoriteButton">
+                                        <button class="z-button">
+                                            <img src="./src/icons/heart.svg" alt="Añadir a favoritos">
+                                        </button>
+                                    </div>
+                                    <div class="product-info">
+                                        <a href="">
+                                            <div>
+                                                <div class="product-infoName">Waffle</div>
+                                                <div class="product-infoReference">RS0228-068 Gris Oscuro</div>
+                                            </div>
+                                            <div>
+                                                <span class="product-infoPrice">9,80€/m</span>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                        <div class="product-carousel">
+                            <button class="z-button product-carousel-buttonLeft hide-content">
+                                <img src="./src/icons/leftrow.svg" alt="">
+                            </button>
+                            <button class="z-button product-carousel-buttonRight">
+                                <img src="./src/icons/rightrow.svg" alt="">
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <footer>
+            <div id="footer_container">
+                <div>
+                    <div class="footer-section footer-section-span2">
+                        <h3>
+                            <span class="footer-section-icon">
+                                <img class="footer-section-logo" src="./src/logo/logo3.svg" alt="Sobre TejidosPulido">
+                            </span>
+                            <span>Sobre TejidosPulido</span> 
+                            <div>
+                                <img src="./src/icons/chevrondown.svg" alt="Sobre TejidosPulido">
                             </div>
-                        </li>
-                    </ul>
-                    <div class="product-carousel">
-                        <button class="z-button product-carousel-buttonLeft hide-content">
-                            <img src="./src/icons/leftrow.svg" alt="">
-                        </button>
-                        <button class="z-button product-carousel-buttonRight">
-                            <img src="./src/icons/rightrow.svg" alt="">
-                        </button>
+                        </h3>
+                        <div>
+                            <p class="footer-section-contentText">
+                                <b>Tejidospulido.com</b> es la tienda de telas en linea de <b>TXT Veretex SL</b>, empresa reconocida en el 
+                                sector textil desde 1980 por la venda de tejidos por metros. En nuesxtro catálogo encontrarás una selección 
+                                de gran variedad, así como categorías especifícas dedicados al <b>Patchwork</b>, colecciones de telas para 
+                                la <b>decoración de interiores</b>, telas para la <b>confección de disfraces y vestidos de espectuaclos</b>, 
+                                entre otros. 
+                            </p>
+                        </div>
+                    </div>
+                    <div class="footer-section">
+                        <h3>
+                            <span class="footer-section-icon">
+                                <svg height="1em" width="1em" focusable="false" fill="currentColor" viewBox="0 0 24 24" aria-labelledby="contact-icon" role="img" aria-hidden="false">
+                                    <title id="contact-icon">Información de contacto</title>
+                                    <path d="M19.75,4 C20.9926407,4 22,5.00735931 22,6.25 L22,17.754591 C22,18.9972317 20.9926407,20.004591 19.75,20.004591 L4.25,20.004591 C3.00735931,20.004591 2,18.9972317 2,17.754591 L2,6.25 C2,5.00735931 3.00735931,4 4.25,4 L19.75,4 Z M19.75,5.5 L4.25,5.5 C3.83578644,5.5 3.5,5.83578644 3.5,6.25 L3.5,17.754591 C3.5,18.1688046 3.83578644,18.504591 4.25,18.504591 L19.75,18.504591 C20.1642136,18.504591 20.5,18.1688046 20.5,17.754591 L20.5,6.25 C20.5,5.83578644 20.1642136,5.5 19.75,5.5 Z M9.75,12.5 C10.1642136,12.5 10.5,12.8357864 10.5,13.25 L10.5,13.7427321 L10.4921036,13.8512782 C10.3293159,14.964219 9.39767421,15.5009403 7.99995063,15.5009403 C6.60213369,15.5009403 5.67047899,14.9636623 5.50787101,13.8501298 L5.5,13.7417575 L5.5,13.25 C5.5,12.8357864 5.83578644,12.5 6.25,12.5 L9.75,12.5 Z M13.2522936,12.9961404 L17.75,12.9961404 C18.1642136,12.9961404 18.5,13.3319269 18.5,13.7461404 C18.5,14.1258362 18.2178461,14.4396314 17.8517706,14.4892938 L17.75,14.4961404 L13.2522936,14.4961404 C12.83808,14.4961404 12.5022936,14.160354 12.5022936,13.7461404 C12.5022936,13.3664447 12.7844475,13.0526495 13.150523,13.002987 L13.2522936,12.9961404 L17.75,12.9961404 L13.2522936,12.9961404 Z M8,8.50218109 C8.82841293,8.50218109 9.4999743,9.17374246 9.4999743,10.0021554 C9.4999743,10.8305683 8.82841293,11.5021297 8,11.5021297 C7.17158707,11.5021297 6.5000257,10.8305683 6.5000257,10.0021554 C6.5000257,9.17374246 7.17158707,8.50218109 8,8.50218109 Z M13.2522936,9.5 L17.75,9.5 C18.1642136,9.5 18.5,9.83578644 18.5,10.25 C18.5,10.6296958 18.2178461,10.943491 17.8517706,10.9931534 L17.75,11 L13.2522936,11 C12.83808,11 12.5022936,10.6642136 12.5022936,10.25 C12.5022936,9.87030423 12.7844475,9.55650904 13.150523,9.50684662 L13.2522936,9.5 L17.75,9.5 L13.2522936,9.5 Z"></path>
+                                </svg>
+                            </span>
+                            <span>Información de contacto</span> 
+                            <div>
+                                <img src="./src/icons/chevrondown.svg" alt="Información de contacto">
+                            </div>
+                        </h3>
+                        <div>
+                            <p>
+                                <b class="footer-section-contentText-title">Atención al cliente:</b> De lunes a viernes de 9:00h a 18:30h.
+                            </p>
+                            <p>
+                                <b class="footer-section-contentText-title">Dirección:</b> Calle Montserrat nº27, 08302 Mataró, Barcelona, España.
+                            </p>
+                            <p>
+                                <b class="footer-section-contentText-title">Teléfono:</b> 937 91 69 58
+                            </p>
+                            <p>
+                                <b class="footer-section-contentText-title">Email:</b> service@tejidospulido.com
+                            </p>
+                        </div>
+                    </div>
+                    <div class="footer-section">
+                        <h3>
+                            <span class="footer-section-icon">
+                                <svg height="1em" width="1em" focusable="false" fill="currentColor" viewBox="0 0 24 24" aria-labelledby="help-icon" role="img" aria-hidden="false">
+                                    <title id="help-icon">Ayuda y FAQ</title>
+                                    <path d="M12 0C5.373 0 0 5.373 0 12s5.373 12 12 12c6.624-.008 11.992-5.376 12-12 0-6.627-5.373-12-12-12zm0 22.5C6.201 22.5 1.5 17.8 1.5 12S6.201 1.5 12 1.5c5.796.007 10.493 4.704 10.5 10.5 0 5.799-4.701 10.5-10.5 10.5z"></path>
+                                    <circle cx="12" cy="18.4" r="1.1"></circle>
+                                    <path d="M12 4.5a4.125 4.125 0 0 0-4.125 4.125.75.75 0 0 0 1.5 0A2.625 2.625 0 1 1 12 11.25a.75.75 0 0 0-.75.75v3a.75.75 0 1 0 1.5 0v-2.319A4.125 4.125 0 0 0 12 4.5z"></path>
+                                </svg>
+                            </span>
+                            <span>Ayuda y FAQ</span> 
+                            <div>
+                                <img src="./src/icons/chevrondown.svg" alt="Ayuda y FAQ">
+                            </div>
+                        </h3>
+                        <div>
+                            <div>
+                                <a class="footer-section-contentText-link fW-700" href="">Ver todos los temas</a>
+                            </div>
+                            <div>
+                                <a class="footer-section-contentText-link" href="">Cómo hacer un pedido</a>
+                            </div>
+                            <div>
+                                <a class="footer-section-contentText-link" href="">Pedir muestras</a>
+                            </div>
+                            <div>
+                                <a class="footer-section-contentText-link" href="">Devolver un pedido</a>
+                            </div>
+                            <div>
+                                <a class="footer-section-contentText-link" href="">Seguir tu pedido</a>
+                            </div>
+                            <div>
+                                <a class="footer-section-contentText-link" href="">Información sobre entregas</a>
+                            </div>
+                            <div>
+                                <a class="footer-section-contentText-link" href="">Recogida en tienda</a>
+                            </div>
+                            <div>
+                                <a class="footer-section-contentText-link" href="">Suscribirse a nuestra Newsletter (-10%)</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="footer-section">
+                        <h3>
+                            <span class="footer-section-icon">
+                                <svg height="1em" width="1em" focusable="false" fill="currentColor" viewBox="0 0 24 24" aria-labelledby="giftcard-icon" role="img" aria-hidden="false">
+                                    <title id="giftcard-icon">Tarjetas regalo</title>
+                                    <path d="M21.75 0H5.25A2.25 2.25 0 0 0 3 2.25v5.76h-.763a2.25 2.25 0 0 0-2.25 2.25v11.5a2.25 2.25 0 0 0 2.25 2.25h16.5a2.25 2.25 0 0 0 2.25-2.25V16h.763A2.25 2.25 0 0 0 24 13.75V2.25A2.25 2.25 0 0 0 21.75 0zm-2.263 21.76a.75.75 0 0 1-.75.75h-16.5a.75.75 0 0 1-.75-.75v-11.5a.75.75 0 0 1 .75-.75h16.5a.75.75 0 0 1 .75.75v11.5zm3.013-8.01a.75.75 0 0 1-.75.75h-.763v-4.24a2.25 2.25 0 0 0-2.25-2.25H4.5V6h18v7.75zm0-10.25h-18V2.25a.75.75 0 0 1 .75-.75h16.5a.75.75 0 0 1 .75.75V3.5z"></path>
+                                    <path d="M11.828 12.788a8.721 8.721 0 0 0-2.901-1.08 3.037 3.037 0 0 0-.465-.043c-.3-.016-.6.055-.944.243-.384.268-.663.665-.768 1.061a8.692 8.692 0 0 0-.513 3.035 8.569 8.569 0 0 0 .495 2.989c.123.453.402.85.866 1.166.245.13.52.197.773.197.19 0 .366-.013.562-.045a8.708 8.708 0 0 0 2.884-1.074 8.6 8.6 0 0 0 2.341-1.923 2 2 0 0 0 .576-1.24.71.71 0 0 0 0-.129c-.04-.468-.245-.908-.535-1.196a8.738 8.738 0 0 0-2.371-1.961zm1.227 3.512a7.26 7.26 0 0 1-1.991 1.64c-.743.44-1.55.74-2.387.893-.08.013-.162.02-.275.022h-.018c-.023.001-.04 0-.023.015a.581.581 0 0 1-.2-.326A7.25 7.25 0 0 1 7.738 16a7.364 7.364 0 0 1 .442-2.581.727.727 0 0 1 .118-.233.208.208 0 0 1 .105-.022c.085.009.181.007.263.021.85.154 1.656.454 2.416.904a7.384 7.384 0 0 1 2.015 1.674.504.504 0 0 1 .134.247.614.614 0 0 1-.175.29z"></path>
+                                </svg>
+                            </span>
+                            <span>Tarjetas regalo</span> 
+                            <div>
+                                <img src="./src/icons/chevrondown.svg" alt="Tarjetas regalo">
+                            </div>
+                        </h3>
+                        <div>
+                            <div>
+                                <a class="footer-section-contentText-link" href="">Comprar tarjetas regalo</a>
+                            </div>
+                            <div>
+                                <a class="footer-section-contentText-link" href="">Canjear una tarjeta regalo</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="footer-section">
+                        <h3>
+                            <span class="footer-section-icon">
+                                <svg height="1em" width="1em" focusable="false" fill="currentColor" viewBox="0 0 24 24" aria-labelledby="transport-icon" role="img" aria-hidden="false">
+                                    <title id="transport-icon">Nuestros partners</title>
+                                    <path d="m23.807 11.497-3.365-3.735a.754.754 0 0 0-.557-.247H16.51V4.5a.75.75 0 0 0-.75-.75H3.007a.75.75 0 0 0-.75.75v12.008c0 .414.336.75.75.75h1.467a2.999 2.999 0 0 0 5.997 0h6.035a2.999 2.999 0 0 0 5.997 0h.746a.75.75 0 0 0 .75-.75V12a.751.751 0 0 0-.193-.503zm-4.256-2.482 2.949 3.274v3.468h-.408c-.519-.896-1.477-1.506-2.587-1.506s-2.068.61-2.587 1.506h-.404v-.96l-.002-5.782h3.039zM3.758 5.25H15.01l.001 3.01v.005l.003 7.492H10.06c-.518-.896-1.476-1.506-2.586-1.506s-2.068.61-2.587 1.506H3.758V5.25zm3.716 13.5a1.5 1.5 0 1 1 0-2.998 1.5 1.5 0 0 1 0 2.998zm12.031 0a1.5 1.5 0 1 1 0-2.998 1.5 1.5 0 0 1 0 2.998z"></path>
+                                </svg>
+                            </span>
+                            <span>Nuestros partners</span> 
+                            <div>
+                                <img src="./src/icons/chevrondown.svg" alt="Nuestros partners">
+                            </div>
+                        </h3>
+                        <div>
+                            <div class="footer-section-contentText-img">
+                                <a href="">
+                                    <img src="src/images/partners/celeritas.svg" alt="Celeritas">
+                                </a>
+                                <a href="">
+                                    <img src="src/images/partners/dhl.svg" alt="DHL">
+                                </a>
+                                <a href="">
+                                    <img src="src/images/partners/correos.svg" alt="Correos">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="footer-section">
+                        <h3>
+                            <span class="footer-section-icon">
+                                <svg height="1em" width="1em" focusable="false" fill="currentColor" viewBox="0 0 24 24" aria-labelledby="payment-icon" role="img" aria-hidden="false">
+                                    <title id="payment-icon">Métodos de pago</title>
+                                    <path d="M21.747 2.987H2.254A2.256 2.256 0 0 0 0 5.241v13.518a2.256 2.256 0 0 0 2.254 2.254h19.493A2.256 2.256 0 0 0 24 18.759V5.241a2.256 2.256 0 0 0-2.253-2.254zm.751 15.772c0 .415-.336.75-.75.752H2.253a.753.753 0 0 1-.751-.752V8.996h20.995v9.763zm0-12.767H1.503V5.24c0-.415.336-.75.75-.752h19.494c.415.001.75.337.751.752v.75z"></path>
+                                    <path d="M15.755 16.506H20.262a.75.75 0 0 0 .75-.75v-4.508a.75.75 0 0 0-.75-.75h-4.507a.75.75 0 0 0-.751.751V15.756c0 .415.336.75.751.75zM16.506 12h3.004v3.004h-3.004V12z"></path>
+                                </svg>
+                            </span>
+                            <span>Métodos de pago</span> 
+                            <div>
+                                <img src="./src/icons/chevrondown.svg" alt="Métodos de pago">
+                            </div>
+                        </h3>
+                        <div>
+                            <div class="footer-section-contentText-img">
+                                <a href="">
+                                    <img src="src/images/payment/paypal.svg" alt="PayPal">
+                                </a>
+                                <a href="">
+                                    <img src="src/images/payment/mastercard.svg" alt="MasterCard">
+                                </a>
+                                <a href="">
+                                    <img src="src/images/payment/maestro.svg" alt="Maestro">
+                                </a>
+                                <a href="">
+                                    <img src="src/images/payment/visa.svg" alt="VISA">
+                                </a>
+                                <a href="">
+                                    <img src="src/images/payment/americanexp.svg" alt="AmericanExpress">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="footer-section">
+                        <h3>
+                            <span class="footer-section-icon">
+                                <svg height="1em" width="1em" focusable="false" fill="currentColor" viewBox="0 0 24 24" aria-labelledby="bag2-icon" role="img" aria-hidden="false">
+                                    <title id="bag2-icon">Ventajas competitivas</title>
+                                    <path d="M20.677 13.654a5.23 5.23 0 0 0 1.073-3.194c-.01-2.632-1.968-4.78-4.5-5.137V5.25a5.25 5.25 0 0 0-10.5 0v.059a5.224 5.224 0 0 0-2.444 1.014 5.23 5.23 0 0 0-.983 7.33A5.623 5.623 0 0 0 6.375 24h11.25a5.623 5.623 0 0 0 3.052-10.346zM12 1.5a3.75 3.75 0 0 1 3.75 3.75h-7.5A3.75 3.75 0 0 1 12 1.5zm5.625 21H6.375a4.122 4.122 0 0 1-1.554-7.942.75.75 0 0 0 .214-1.256A3.697 3.697 0 0 1 3.75 10.5a3.755 3.755 0 0 1 3-3.674V9a.75.75 0 0 0 1.5 0V6.75h7.5V9a.75.75 0 1 0 1.5 0V6.826a3.755 3.755 0 0 1 3 3.674c0 1.076-.47 2.1-1.285 2.802a.75.75 0 0 0 .213 1.256 4.122 4.122 0 0 1-1.553 7.942z"></path>
+                                </svg>
+                            </span>
+                            <span>Nuestras ventajas</span> 
+                            <div>
+                                <img src="./src/icons/chevrondown.svg" alt="Nuestras ventajas">
+                            </div>
+                        </h3>
+                        <div>
+                            <div class="footer-section-contentText-link-withIcon">
+                                <span>
+                                    <svg height="1em" width="1em" focusable="false" fill="currentColor" viewBox="0 0 24 24" aria-labelledby="returns-icon" role="img" aria-hidden="false">
+                                        <title id="returns-icon">Devolución gratuita</title>
+                                        <path d="M14.25 4.33H1.939l3.056-3.055A.75.75 0 0 0 3.934.215L.658 3.49a2.252 2.252 0 0 0 0 3.182l3.276 3.275a.75.75 0 0 0 1.06-1.06L1.94 5.83h12.31c4.557 0 8.251 3.694 8.251 8.25S18.806 22.5 14.25 22.5h-12a.75.75 0 0 0 0 1.5h12c5.385 0 9.75-4.534 9.75-9.919s-4.365-9.75-9.75-9.75z"></path>
+                                    </svg>
+                                </span>
+                                <span>
+                                    <a class="footer-section-contentText-link" href="">Devolución gratuita</a>
+                                </span>
+                            </div>
+                            <div class="footer-section-contentText-link-withIcon">
+                                <span>
+                                    <svg height="1em" width="1em" focusable="false" fill="currentColor" viewBox="0 0 24 24" aria-labelledby="returns_right-icon" role="img" aria-hidden="false">
+                                        <title id="returns_right-icon">Derecho de devolución</title>
+                                        <path d="M21 1.5h-2.25V.75a.75.75 0 0 0-1.5 0v.75H6.75V.75a.75.75 0 0 0-1.5 0v.75H3a3.003 3.003 0 0 0-3 3V21a3.003 3.003 0 0 0 3 3h18a3.004 3.004 0 0 0 3-3V4.5a3.004 3.004 0 0 0-3-3zM3 3h2.25v.75a.75.75 0 1 0 1.5 0V3h10.5v.75a.75.75 0 1 0 1.5 0V3H21c.828 0 1.5.672 1.5 1.5v3h-21v-3C1.5 3.672 2.172 3 3 3zm18 19.5H3c-.828 0-1.5-.672-1.5-1.5V9h21v12c0 .828-.672 1.5-1.5 1.5z"></path>
+                                        <path d="M11.344 11.672c-1.472 0-2.625 1.72-2.625 3.914S9.872 19.5 11.344 19.5s2.625-1.72 2.625-3.914-1.153-3.914-2.625-3.914zm0 6.328c-.459 0-1.125-.94-1.125-2.414s.666-2.414 1.125-2.414 1.125.94 1.125 2.414c0 1.474-.667 2.414-1.125 2.414zM17.906 11.672c-1.472 0-2.625 1.72-2.625 3.914s1.153 3.914 2.625 3.914c1.473 0 2.625-1.72 2.625-3.914s-1.153-3.914-2.625-3.914zm0 6.328c-.458 0-1.125-.94-1.125-2.414s.667-2.414 1.125-2.414 1.125.94 1.125 2.414c0 1.474-.666 2.414-1.125 2.414zM5.625 12 3.75 13.5a.75.75 0 1 0 .938 1.172l.656-.526v4.44a.75.75 0 1 0 1.5 0v-6A.75.75 0 0 0 5.625 12z"></path>
+                                    </svg>
+                                </span>
+                                <span>
+                                    <a class="footer-section-contentText-link" href="">Derecho de devolución de 100 días</a>
+                                </span>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
-        </section>
-        <footer></footer>
+            <div id="subfooter_container">
+                <div>
+                    <div class="subfooter-links">
+                        <a href="">Aviso Legal</a>
+                        <a href="">Términos y condiciones</a>
+                        <a href="">Protección de datos</a>
+                        <a href="">Configuración de datos</a>
+                    </div>
+                    <div class="subfooter-icons">
+                        <h3>Aplicación de TejidosPulido:</h3>
+                        <div>
+                            <a href="">
+                                <img src="./src/icons/appstore.svg" alt="Aplicación para Apple">
+                            </a>
+                            <a href="">
+                                <img src="./src/icons/googleplay.svg" alt="Aplicación para Android">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="subfooter-icons">
+                        <h3>Siguenos en:</h3>
+                        <div>
+                            <a class="subfooter-icons-rounded" href="">
+                                <img src="./src/icons/facebook.svg" alt="Facebook">
+                            </a>
+                            <a class="subfooter-icons-rounded" href="">
+                                <img src="./src/icons/instagram.svg" alt="Instagram">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <p>Copyright © 2022 - TXT Veretex SL, All Rights Reserved</p>
+            </div>
+        </footer>
     </body>
     <script src="main.js"></script>
 </html>
